@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Valentine</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffebee;
+            /* Soft premium pink */
+            font-family: 'Poppins', sans-serif;
+            /* Clean modern font */
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        h1 {
+            color: #d32f2f;
+            font-family: 'Pacifico', cursive;
+            /* Romantic font for the header */
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .gif-container img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            /* Adds depth */
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 16px 32px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        #yesBtn {
+            background-color: #2e7d32;
+            /* Rich Green */
+            color: white;
+        }
+
+        #noBtn {
+            background-color: #c62828;
+            /* Deep Red */
+            color: white;
+        }
+
+        /* Mobile optimization */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .gif-container img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gif-container">
+        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3R6cW51Z3d5Y2Z6OG51Z3d5Y2Z6OG51Z3d5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif"
+            alt="Cute Bear">
+    </div>
+
+    <h1>Will you be my Valentine, Iyawo? 🌹</h1>
+
+    <div class="buttons">
+        <button id="yesBtn" onclick="acceptLove()">Yes</button>
+        <button id="noBtn" onclick="rejectLove()">No</button>
+    </div>
+
+    <script>
+        let yesSize = 1.2;
+        let clickCount = 0;
+
+        const phrases = [
+            "No",
+            "Are you sure, Iyawo?",
+            "Think about it...",
+            "Don't do this to me!",
+            "I'll buy you food!",
+            "Pretty please?",
+            "Don't break my heart ;(",
+            "Last chance!",
+            "Okay, I'm gonna cry...",
+            "You're killing me, Iyawo!",
+            "Just click YES already! ❤️"
+        ];
+
+        function rejectLove() {
+            clickCount++;
+
+            // Increase Yes button size
+            yesSize *= 1.2;
+            const yesBtn = document.getElementById('yesBtn');
+            yesBtn.style.fontSize = `${yesSize}rem`;
+            yesBtn.style.padding = `${yesSize * 15}px ${yesSize * 30}px`;
+
+            // Change No button text
+            const noBtn = document.getElementById('noBtn');
+            // Loop through phrases or stay on the last one
+            if (clickCount < phrases.length) {
+                noBtn.innerText = phrases[clickCount];
+            } else {
+                noBtn.innerText = phrases[phrases.length - 1];
+            }
+        }
+
+        function acceptLove() {
+            document.body.innerHTML = `
+                <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;">
+                    <h1 style="font-size: 3.5rem; color: #d32f2f; margin: 20px;">Yay! I love you, Iyawo! ❤️</h1>
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3R6cW51Z3d5Y2Z6OG51Z3d5Y2Z6OG51Z3d5YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/T86i6yDyOYz7J6dPhf/giphy.gif" style="width: 300px; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+                </div>
+            `;
+        }
+    </script>
+</body>
+
+</html>

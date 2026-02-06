@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Desert Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: { 50: '#FDFCFB', 100: '#FAF9F6', 200: '#E7E5E4', 300: '#D6D3D1', 900: '#78716C' },
+                        stone: { 800: '#292524', 900: '#1C1917' },
+                        terra: { 400: '#FB923C', 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        sage: { 500: '#84CC16', 600: '#65A30D', 700: '#4D7C0F', 800: '#3F6212' }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C1917;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-sand-100/90 backdrop-blur-md border-b border-sand-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="home.html" class="text-2xl font-black tracking-tighter hover:text-terra-600 transition-colors">
+                DESERT.TECH
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-stone-600">
+                <a href="home.html" class="hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="text-terra-600">About</a>
+                <a href="services.html" class="hover:text-stone-900 transition-colors">Services</a>
+                <a href="portfolio.html" class="hover:text-stone-900 transition-colors">Work</a>
+                <a href="contact.html" class="hover:text-stone-900 transition-colors">Contact</a>
+            </div>
+            <a href="contact.html"
+                class="bg-stone-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-terra-600 transition-colors">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <!-- Header -->
+        <section class="max-w-4xl mx-auto px-6 text-center mb-24">
+            <h1 class="text-5xl font-black mb-8 text-stone-900">Forged in the Heat.</h1>
+            <p class="text-xl text-stone-600 leading-relaxed">
+                We are a collective of designers, engineers, and strategists who believe that the best work comes from
+                stripping away the unnecessary. Like the desert, our process is ruthless but beautiful.
+            </p>
+        </section>
+
+        <!-- Stats -->
+        <section class="border-y border-sand-200 bg-white py-16 mb-24">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div>
+                    <div class="text-5xl font-black text-terra-600 mb-2">5+</div>
+                    <div class="text-sm font-bold uppercase tracking-widest text-stone-500">Years Active</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-black text-stone-900 mb-2">120</div>
+                    <div class="text-sm font-bold uppercase tracking-widest text-stone-500">Projects Shipped</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-black text-stone-900 mb-2">15</div>
+                    <div class="text-sm font-bold uppercase tracking-widest text-stone-500">Awards Won</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-black text-sage-600 mb-2">100%</div>
+                    <div class="text-sm font-bold uppercase tracking-widest text-stone-500">Client Joy</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="max-w-7xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">The Caravan Leaders</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Member 1 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-6 aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            alt="Founder">
+                        <div class="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Liam Stone</h3>
+                    <p class="text-terra-600 text-sm font-medium">Founder & Principal</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-6 aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            alt="Lead Designer">
+                        <div class="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Sarah Dune</h3>
+                    <p class="text-terra-600 text-sm font-medium">Head of Design</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="group">
+                    <div class="relative overflow-hidden rounded-xl mb-6 aspect-[3/4]">
+                        <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1887&auto=format&fit=crop"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            alt="Lead Dev">
+                        <div class="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/20 transition-colors">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold">Marcus Arid</h3>
+                    <p class="text-terra-600 text-sm font-medium">CTO</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-stone-900 text-sand-100 py-12 text-center text-sm text-stone-500">
+        <p>&copy; 2026 Desert Tech Agency.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

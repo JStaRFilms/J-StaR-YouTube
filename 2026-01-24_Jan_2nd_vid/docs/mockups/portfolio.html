@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work | Desert Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: { 50: '#FDFCFB', 100: '#FAF9F6', 200: '#E7E5E4', 300: '#D6D3D1', 900: '#78716C' },
+                        stone: { 800: '#292524', 900: '#1C1917' },
+                        terra: { 400: '#FB923C', 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        sage: { 500: '#84CC16', 600: '#65A30D', 700: '#4D7C0F', 800: '#3F6212' }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C1917;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-sand-100/90 backdrop-blur-md border-b border-sand-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="home.html" class="text-2xl font-black tracking-tighter hover:text-terra-600 transition-colors">
+                DESERT.TECH
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-stone-600">
+                <a href="home.html" class="hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="hover:text-stone-900 transition-colors">Services</a>
+                <a href="portfolio.html" class="text-terra-600">Work</a>
+                <a href="contact.html" class="hover:text-stone-900 transition-colors">Contact</a>
+            </div>
+            <a href="contact.html"
+                class="bg-stone-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-terra-600 transition-colors">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <section class="max-w-7xl mx-auto px-6 mb-16">
+            <h1 class="text-5xl font-black mb-6 text-stone-900">Selected Works</h1>
+
+            <!-- Filters -->
+            <div class="flex gap-4 overflow-x-auto pb-4">
+                <button class="px-6 py-2 rounded-full bg-stone-900 text-white font-medium text-sm whitespace-nowrap">All
+                    Projects</button>
+                <button
+                    class="px-6 py-2 rounded-full border border-sand-300 text-stone-600 font-medium text-sm hover:border-stone-900 whitespace-nowrap transition-colors">Branding</button>
+                <button
+                    class="px-6 py-2 rounded-full border border-sand-300 text-stone-600 font-medium text-sm hover:border-stone-900 whitespace-nowrap transition-colors">Development</button>
+                <button
+                    class="px-6 py-2 rounded-full border border-sand-300 text-stone-600 font-medium text-sm hover:border-stone-900 whitespace-nowrap transition-colors">Strategy</button>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+
+            <!-- Project 1 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl aspect-video mb-4">
+                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2700&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Project 1">
+                    <div class="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/10 transition-colors"></div>
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold group-hover:text-terra-600 transition-colors">Sahar Banking</h3>
+                        <p class="text-stone-500">Fintech Dashboard</p>
+                    </div>
+                    <i data-lucide="arrow-up-right"
+                        class="w-6 h-6 text-stone-300 group-hover:text-terra-600 transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group cursor-pointer md:mt-12">
+                <div class="relative overflow-hidden rounded-xl aspect-video mb-4">
+                    <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2564&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Project 2">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold group-hover:text-terra-600 transition-colors">Dune Retail</h3>
+                        <p class="text-stone-500">E-commerce Platform</p>
+                    </div>
+                    <i data-lucide="arrow-up-right"
+                        class="w-6 h-6 text-stone-300 group-hover:text-terra-600 transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group cursor-pointer">
+                <div class="relative overflow-hidden rounded-xl aspect-video mb-4">
+                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Project 3">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold group-hover:text-terra-600 transition-colors">Oasis Health</h3>
+                        <p class="text-stone-500">Medical App</p>
+                    </div>
+                    <i data-lucide="arrow-up-right"
+                        class="w-6 h-6 text-stone-300 group-hover:text-terra-600 transition-colors"></i>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="group cursor-pointer md:mt-12">
+                <div class="relative overflow-hidden rounded-xl aspect-video mb-4">
+                    <img src="https://images.unsplash.com/photo-1545620857-a3a8027786ae?q=80&w=2070&auto=format&fit=crop"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        alt="Project 4">
+                </div>
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="text-2xl font-bold group-hover:text-terra-600 transition-colors">Terra Firma</h3>
+                        <p class="text-stone-500">Real Estate</p>
+                    </div>
+                    <i data-lucide="arrow-up-right"
+                        class="w-6 h-6 text-stone-300 group-hover:text-terra-600 transition-colors"></i>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-stone-900 text-sand-100 py-12 text-center text-sm text-stone-500">
+        <p>&copy; 2026 Desert Tech Agency.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

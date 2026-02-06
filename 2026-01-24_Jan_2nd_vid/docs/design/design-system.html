@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desert Tech Design System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: {
+                            50: '#FDFCFB',
+                            100: '#FAF9F6',
+                            200: '#E7E5E4',
+                            300: '#D6D3D1',
+                            900: '#78716C',
+                        },
+                        stone: {
+                            800: '#292524',
+                            900: '#1C1917',
+                        },
+                        terra: {
+                            400: '#FB923C',
+                            500: '#F97316',
+                            600: '#EA580C', // Burnt Orange
+                            700: '#C2410C',
+                        },
+                        sage: {
+                            500: '#84CC16',
+                            600: '#65A30D',
+                            700: '#4D7C0F', // Deep Sage
+                            800: '#3F6212',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #FAF9F6; /* sand-100 */
+            color: #1C1917; /* stone-900 */
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body class="p-8 md:p-16 space-y-24">
+
+    <!-- Header -->
+    <header class="border-b border-sand-300 pb-8">
+        <h1 class="text-5xl font-black tracking-tight text-stone-900 mb-2">Desert Tech <span class="text-terra-600">.</span></h1>
+        <p class="text-xl text-stone-800 font-light">Design System v1.0 • Warm, Earthy, Professional</p>
+    </header>
+
+    <!-- Colors -->
+    <section>
+        <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <i data-lucide="palette" class="w-8 h-8 text-terra-600"></i> Color Palette
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Sand -->
+            <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-sand-100 shadow-sm border border-sand-200"></div>
+                <div>
+                    <p class="font-bold">Sand 100</p>
+                    <p class="text-sm text-sand-900 text-opacity-80">Background</p>
+                </div>
+            </div>
+             <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-sand-200 shadow-sm"></div>
+                <div>
+                    <p class="font-bold">Sand 200</p>
+                    <p class="text-sm text-sand-900 text-opacity-80">Unselected / Border</p>
+                </div>
+            </div>
+            <!-- Stone -->
+            <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-stone-900 shadow-md"></div>
+                <div>
+                    <p class="font-bold text-stone-900">Stone 900</p>
+                    <p class="text-sm text-stone-800">Primary Text</p>
+                </div>
+            </div>
+             <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-stone-800 shadow-md"></div>
+                <div>
+                    <p class="font-bold text-stone-900">Stone 800</p>
+                    <p class="text-sm text-stone-800">Secondary Text</p>
+                </div>
+            </div>
+
+            <!-- Terra -->
+            <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-terra-600 shadow-md"></div>
+                <div>
+                    <p class="font-bold text-terra-700">Terra 600</p>
+                    <p class="text-sm text-stone-600">Brand Primary</p>
+                </div>
+            </div>
+             <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-terra-700 shadow-md"></div>
+                <div>
+                    <p class="font-bold text-terra-700">Terra 700</p>
+                    <p class="text-sm text-stone-600">Active / Hover</p>
+                </div>
+            </div>
+             <!-- Sage -->
+             <div class="space-y-3">
+                <div class="h-24 rounded-lg bg-sage-700 shadow-md"></div>
+                <div>
+                    <p class="font-bold text-sage-800">Sage 700</p>
+                    <p class="text-sm text-stone-600">Success / Accent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography -->
+    <section>
+        <h2 class="text-3xl font-bold mb-8 flex items-center gap-3">
+            <i data-lucide="type" class="w-8 h-8 text-terra-600"></i> Typography
+        </h2>
+        <div class="space-y-8 border-l-4 border-terra-600 pl-8">
+            <div>
+                <h1 class="text-6xl font-black mb-2">Display Heading</h1>
+                <p class="text-sm text-stone-500 font-mono">Merriweather Black • 6xl</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold mb-2">Section Heading</h2>
+                <p class="text-sm text-stone-500 font-mono">Merriweather Bold • 4xl</p>
+            </div>
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Card Title</h3>
+                <p class="text-sm text-stone-500 font-mono">Merriweather Bold • 2xl</p>
+            </div>
+            <div class="max-w-prose">
+                <p class="text-lg leading-relaxed text-stone-800">
+                    This is body text. The desert is a place of stark contrast and undeniable beauty. 
+                    We use <strong>Inter</strong> for high legibility at small sizes, ensuring that information 
+                    is conveyed with crystal clarity against the warm, sandy background.
+                </p>
+                <p class="text-sm text-stone-500 font-mono mt-2">Inter Regular • lg</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Components -->
+    <section>
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <i data-lucide="box" class="w-8 h-8 text-terra-600"></i> Components
+        </h2>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            <!-- Buttons -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold border-b border-sand-300 pb-2">Buttons</h3>
+                <div class="flex flex-wrap gap-4 items-center">
+                    <button class="bg-terra-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-terra-700 transition-colors shadow-lg shadow-terra-600/20">
+                        Primary Action
+                    </button>
+                    <button class="bg-stone-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-stone-800 transition-colors">
+                        Secondary
+                    </button>
+                    <button class="border-2 border-stone-200 text-stone-900 px-6 py-3 rounded-lg font-medium hover:border-stone-900 transition-colors">
+                        Outline
+                    </button>
+                    <button class="text-terra-600 font-bold hover:text-terra-700 underline decoration-2 underline-offset-4">
+                        Text Link
+                    </button>
+                </div>
+            </div>
+
+            <!-- Inputs -->
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold border-b border-sand-300 pb-2">Forms</h3>
+                <div class="space-y-4 max-w-md">
+                    <div>
+                        <label class="block text-sm font-bold text-stone-700 mb-1">Email Address</label>
+                        <input type="text" placeholder="you@desert.tech" class="w-full bg-white border border-stone-200 rounded-lg px-4 py-3 text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="space-y-6 lg:col-span-2">
+                <h3 class="text-xl font-bold border-b border-sand-300 pb-2">Cards</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Standard Card -->
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-sand-200 hover:shadow-md transition-shadow group">
+                        <div class="h-12 w-12 bg-sand-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-terra-600 group-hover:text-white transition-colors text-stone-900">
+                            <i data-lucide="mountain" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Foundation</h4>
+                        <p class="text-stone-600">Solid, earthy foundations for digital products. Built to last and scale.</p>
+                    </div>
+
+                    <!-- Highlight Card -->
+                    <div class="bg-stone-900 text-white p-8 rounded-xl shadow-xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 p-32 bg-terra-600 rounded-full blur-3xl opacity-10 -mr-16 -mt-16 pointer-events-none"></div>
+                        <div class="h-12 w-12 bg-white/10 rounded-lg flex items-center justify-center mb-6 backdrop-blur-sm">
+                            <i data-lucide="sun" class="w-6 h-6 text-terra-400"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3">Illumination</h4>
+                        <p class="text-stone-400">Shedding light on complex problems with intuitive, human approaches.</p>
+                    </div>
+
+                    <!-- Outline Card -->
+                     <div class="bg-transparent p-8 rounded-xl border border-stone-200 hover:border-terra-600 transition-colors cursor-pointer group">
+                        <div class="h-12 w-12 bg-sand-200 rounded-lg flex items-center justify-center mb-6 group-hover:bg-terra-600 group-hover:text-white transition-colors text-stone-900">
+                            <i data-lucide="arrow-right" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-3 group-hover:text-terra-600 transition-colors">Explore</h4>
+                        <p class="text-stone-600">Discover more about our ecosystem and design philosophy.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="mt-24 pt-12 border-t border-stone-200 text-center text-stone-500">
+        <p>Desert Tech Design System • 2026</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

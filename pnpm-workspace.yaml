@@ -1,0 +1,12 @@
+packages:
+  # All Remotion video projects
+  - 'videos/*'
+  
+  # Individual video projects (current structure)
+  - '2026-*'
+  
+  # Shared packages and utilities
+  - 'packages/*'
+  
+  # Tools and scripts
+  - 'tools/*'

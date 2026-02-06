@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaultX - The Future of Crypto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #ec4899;
+            --accent: #06b6d4;
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-elevated: #1a1a25;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --gradient-1: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #06b6d4 100%);
+            --gradient-2: linear-gradient(135deg, #06b6d4 0%, #6366f1 100%);
+            --gradient-3: linear-gradient(135deg, #ec4899 0%, #f59e0b 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1.25rem 2rem;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .nav.scrolled {
+            padding: 0.875rem 2rem;
+            background: rgba(10, 10, 15, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: var(--bg-dark);
+            border-radius: 10px;
+        }
+
+        .logo-icon svg {
+            position: relative;
+            z-index: 1;
+            width: 20px;
+            height: 20px;
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9375rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(60px, 60px);
+            }
+        }
+
+        .hero-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.4;
+            animation: glowPulse 8s ease-in-out infinite;
+        }
+
+        .glow-1 {
+            width: 600px;
+            height: 600px;
+            background: var(--primary);
+            top: -200px;
+            right: -100px;
+            animation-delay: 0s;
+        }
+
+        .glow-2 {
+            width: 500px;
+            height: 500px;
+            background: var(--secondary);
+            bottom: -150px;
+            left: -100px;
+            animation-delay: -4s;
+        }
+
+        .glow-3 {
+            width: 400px;
+            height: 400px;
+            background: var(--accent);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+            animation-delay: -2s;
+        }
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .hero-badge .pulse {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
+        }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.6s ease 0.1s forwards;
+            opacity: 0;
+        }
+
+        .hero-title .gradient-text {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 0.6s ease 0.2s forwards;
+            opacity: 0;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            animation: fadeInUp 0.6s ease 0.3s forwards;
+            opacity: 0;
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            animation: fadeInUp 0.6s ease 0.4s forwards;
+            opacity: 0;
+        }
+
+        .stat {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .phone-mockup {
+            position: relative;
+            width: 320px;
+            height: 640px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            animation: phoneFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes phoneFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) rotateY(-5deg) rotateX(5deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotateY(5deg) rotateX(-5deg);
+            }
+        }
+
+        .phone-frame {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(145deg, #2a2a35 0%, #1a1a25 100%);
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow:
+                0 50px 100px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+
+        .phone-screen {
+            width: 100%;
+            height: 100%;
+            background: var(--bg-dark);
+            border-radius: 32px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .app-ui {
+            padding: 1.5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .app-avatar {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .app-notification {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-elevated);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .app-notification::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 8px;
+            height: 8px;
+            background: var(--secondary);
+            border-radius: 50%;
+        }
+
+        .balance-card {
+            background: var(--gradient-1);
+            border-radius: 24px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .balance-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        }
+
+        .balance-label {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .balance-amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .balance-change {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.25rem 0.75rem;
+            background: rgba(34, 197, 94, 0.2);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: #4ade80;
+        }
+
+        .quick-actions {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .quick-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quick-action:hover {
+            background: var(--bg-card);
+            transform: translateY(-2px);
+        }
+
+        .quick-action-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quick-action-icon.send {
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary);
+        }
+
+        .quick-action-icon.receive {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--success);
+        }
+
+        .quick-action-icon.swap {
+            background: rgba(236, 72, 153, 0.2);
+            color: var(--secondary);
+        }
+
+        .quick-action-icon.buy {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent);
+        }
+
+        .quick-action span {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .crypto-list {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .crypto-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .crypto-list-title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .crypto-list-view {
+            font-size: 0.875rem;
+            color: var(--primary);
+            cursor: pointer;
+        }
+
+        .crypto-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.875rem;
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            margin-bottom: 0.75rem;
+        }
+
+        .crypto-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+
+        .crypto-icon.btc {
+            background: rgba(247, 147, 26, 0.2);
+            color: #f7931a;
+        }
+
+        .crypto-icon.eth {
+            background: rgba(98, 126, 234, 0.2);
+            color: #627eea;
+        }
+
+        .crypto-icon.sol {
+            background: rgba(20, 241, 149, 0.2);
+            color: #14f195;
+        }
+
+        .crypto-info {
+            flex: 1;
+        }
+
+        .crypto-name {
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .crypto-symbol {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+
+        .crypto-price {
+            text-align: right;
+        }
+
+        .crypto-value {
+            font-weight: 600;
+            font-size: 0.9375rem;
+        }
+
+        .crypto-change {
+            font-size: 0.8125rem;
+        }
+
+        .crypto-change.positive {
+            color: var(--success);
+        }
+
+        .crypto-change.negative {
+            color: #ef4444;
+        }
+
+        .floating-cards {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
+
+        .floating-card {
+            position: absolute;
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 1rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: cardFloat 4s ease-in-out infinite;
+        }
+
+        .floating-card.card-1 {
+            top: 10%;
+            right: -20%;
+            animation-delay: 0s;
+        }
+
+        .floating-card.card-2 {
+            bottom: 20%;
+            left: -15%;
+            animation-delay: -2s;
+        }
+
+        @keyframes cardFloat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .tx-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .tx-icon {
+            width: 36px;
+            height: 36px;
+            background: rgba(34, 197, 94, 0.2);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--success);
+        }
+
+        .tx-info {
+            flex: 1;
+        }
+
+        .tx-title {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .tx-time {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .tx-amount {
+            font-weight: 600;
+            color: var(--success);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        .features-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-1);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .feature-card.featured {
+            grid-column: span 2;
+            grid-row: span 2;
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.1) 100%);
+        }
+
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--bg-elevated);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon svg {
+            width: 28px;
+            height: 28px;
+            color: var(--primary);
+        }
+
+        .feature-card.featured .feature-icon {
+            background: var(--gradient-1);
+        }
+
+        .feature-card.featured .feature-icon svg {
+            color: white;
+        }
+
+        .feature-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-card.featured .feature-title {
+            font-size: 1.75rem;
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-visual {
+            margin-top: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .security-demo {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .security-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .security-item svg {
+            width: 24px;
+            height: 24px;
+            color: var(--success);
+        }
+
+        .security-item span {
+            font-weight: 500;
+            font-size: 0.9375rem;
+        }
+
+        .chart-demo {
+            height: 120px;
+            background: var(--bg-elevated);
+            border-radius: 16px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .chart-line svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Marquee Section */
+        .marquee-section {
+            padding: 4rem 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee 30s linear infinite;
+        }
+
+        .marquee-content {
+            display: flex;
+            gap: 4rem;
+            padding: 0 2rem;
+            flex-shrink: 0;
+        }
+
+        .marquee-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            white-space: nowrap;
+        }
+
+        .marquee-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--bg-card);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .marquee-icon svg {
+            width: 24px;
+            height: 24px;
+            color: var(--text-secondary);
+        }
+
+        .marquee-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        .cta-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(145deg, var(--bg-card) 0%, rgba(99, 102, 241, 0.1) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 32px;
+            padding: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+            animation: ctaGlow 10s ease-in-out infinite;
+        }
+
+        @keyframes ctaGlow {
+
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin: 0 auto 2rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand {
+            max-width: 320px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            color: var(--text-secondary);
+            font-size: 0.9375rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: var(--bg-elevated);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer-column h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9375rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-copyright {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-legal a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-legal a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-cta {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .phone-mockup {
+                width: 280px;
+                height: 560px;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .feature-card.featured {
+                grid-column: span 2;
+                grid-row: span 1;
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-card.featured {
+                grid-column: span 1;
+            }
+
+            .cta-container {
+                padding: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        /* Particle Canvas */
+        #particles {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="wallet"></i>
+                </div>
+                VaultX
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-ghost">Sign In</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-grid"></div>
+            <div class="hero-glow glow-1"></div>
+            <div class="hero-glow glow-2"></div>
+            <div class="hero-glow glow-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    Now supporting 50+ cryptocurrencies
+                </div>
+                <h1 class="hero-title">
+                    Your Crypto,<br>
+                    <span class="gradient-text">Simplified.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    The most secure and intuitive wallet for managing your digital assets.
+                    Buy, sell, swap, and earn with institutional-grade security.
+                </p>
+                <div class="hero-cta">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <i data-lucide="download"></i>
+                        Download App
+                    </a>
+                    <a href="#" class="btn btn-ghost btn-large">
+                        <i data-lucide="play-circle"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value">$2.4B+</span>
+                        <span class="stat-label">Assets Protected</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">500K+</span>
+                        <span class="stat-label">Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="app-ui">
+                                <div class="app-header">
+                                    <div class="app-avatar">JD</div>
+                                    <div class="app-notification">
+                                        <i data-lucide="bell" style="width: 18px; height: 18px;"></i>
+                                    </div>
+                                </div>
+                                <div class="balance-card">
+                                    <div class="balance-label">Total Balance</div>
+                                    <div class="balance-amount">$24,563.80</div>
+                                    <div class="balance-change">
+                                        <i data-lucide="trending-up" style="width: 14px; height: 14px;"></i>
+                                        +12.5% this month
+                                    </div>
+                                </div>
+                                <div class="quick-actions">
+                                    <div class="quick-action">
+                                        <div class="quick-action-icon send">
+                                            <i data-lucide="arrow-up-right" style="width: 18px; height: 18px;"></i>
+                                        </div>
+                                        <span>Send</span>
+                                    </div>
+                                    <div class="quick-action">
+                                        <div class="quick-action-icon receive">
+                                            <i data-lucide="arrow-down-left" style="width: 18px; height: 18px;"></i>
+                                        </div>
+                                        <span>Receive</span>
+                                    </div>
+                                    <div class="quick-action">
+                                        <div class="quick-action-icon swap">
+                                            <i data-lucide="repeat" style="width: 18px; height: 18px;"></i>
+                                        </div>
+                                        <span>Swap</span>
+                                    </div>
+                                    <div class="quick-action">
+                                        <div class="quick-action-icon buy">
+                                            <i data-lucide="credit-card" style="width: 18px; height: 18px;"></i>
+                                        </div>
+                                        <span>Buy</span>
+                                    </div>
+                                </div>
+                                <div class="crypto-list">
+                                    <div class="crypto-list-header">
+                                        <span class="crypto-list-title">Your Assets</span>
+                                        <span class="crypto-list-view">View All</span>
+                                    </div>
+                                    <div class="crypto-item">
+                                        <div class="crypto-icon btc">₿</div>
+                                        <div class="crypto-info">
+                                            <div class="crypto-name">Bitcoin</div>
+                                            <div class="crypto-symbol">BTC</div>
+                                        </div>
+                                        <div class="crypto-price">
+                                            <div class="crypto-value">$18,240</div>
+                                            <div class="crypto-change positive">+5.2%</div>
+                                        </div>
+                                    </div>
+                                    <div class="crypto-item">
+                                        <div class="crypto-icon eth">Ξ</div>
+                                        <div class="crypto-info">
+                                            <div class="crypto-name">Ethereum</div>
+                                            <div class="crypto-symbol">ETH</div>
+                                        </div>
+                                        <div class="crypto-price">
+                                            <div class="crypto-value">$4,120</div>
+                                            <div class="crypto-change positive">+8.1%</div>
+                                        </div>
+                                    </div>
+                                    <div class="crypto-item">
+                                        <div class="crypto-icon sol">S</div>
+                                        <div class="crypto-info">
+                                            <div class="crypto-name">Solana</div>
+                                            <div class="crypto-symbol">SOL</div>
+                                        </div>
+                                        <div class="crypto-price">
+                                            <div class="crypto-value">$2,203</div>
+                                            <div class="crypto-change negative">-2.4%</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <div class="tx-item">
+                            <div class="tx-icon">
+                                <i data-lucide="arrow-down-left" style="width: 18px; height: 18px;"></i>
+                            </div>
+                            <div class="tx-info">
+                                <div class="tx-title">Received BTC</div>
+                                <div class="tx-time">Just now</div>
+                            </div>
+                            <div class="tx-amount">+0.5 BTC</div>
+                        </div>
+                    </div>
+                    <div class="floating-card card-2">
+                        <div class="tx-item">
+                            <div class="tx-icon" style="background: rgba(236, 72, 153, 0.2); color: var(--secondary);">
+                                <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
+                            </div>
+                            <div class="tx-info">
+                                <div class="tx-title">Security Check</div>
+                                <div class="tx-time">Verified</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="bitcoin"></i>
+                    </div>
+                    <span class="marquee-text">Bitcoin</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="hexagon"></i>
+                    </div>
+                    <span class="marquee-text">Ethereum</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="sun"></i>
+                    </div>
+                    <span class="marquee-text">Solana</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="circle-dollar-sign"></i>
+                    </div>
+                    <span class="marquee-text">USDC</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="gem"></i>
+                    </div>
+                    <span class="marquee-text">Polygon</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <span class="marquee-text">Avalanche</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <span class="marquee-text">BNB</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <span class="marquee-text">Cardano</span>
+                </div>
+            </div>
+            <div class="marquee-content">
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="bitcoin"></i>
+                    </div>
+                    <span class="marquee-text">Bitcoin</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="hexagon"></i>
+                    </div>
+                    <span class="marquee-text">Ethereum</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="sun"></i>
+                    </div>
+                    <span class="marquee-text">Solana</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="circle-dollar-sign"></i>
+                    </div>
+                    <span class="marquee-text">USDC</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="gem"></i>
+                    </div>
+                    <span class="marquee-text">Polygon</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="rocket"></i>
+                    </div>
+                    <span class="marquee-text">Avalanche</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <span class="marquee-text">BNB</span>
+                </div>
+                <div class="marquee-item">
+                    <div class="marquee-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <span class="marquee-text">Cardano</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+                    Powerful Features
+                </div>
+                <h2 class="section-title">Everything You Need</h2>
+                <p class="section-subtitle">
+                    A complete suite of tools designed for both beginners and experienced traders.
+                    Manage your portfolio with confidence.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card featured">
+                    <div class="feature-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3 class="feature-title">Bank-Grade Security</h3>
+                    <p class="feature-description">
+                        Your assets are protected by multi-signature technology, biometric authentication,
+                        and 24/7 monitoring. We use hardware security modules and cold storage for maximum protection.
+                    </p>
+                    <div class="feature-visual">
+                        <div class="security-demo">
+                            <div class="security-item">
+                                <i data-lucide="fingerprint"></i>
+                                <span>Biometric Auth</span>
+                            </div>
+                            <div class="security-item">
+                                <i data-lucide="lock"></i>
+                                <span>Multi-Sig</span>
+                            </div>
+                            <div class="security-item">
+                                <i data-lucide="eye-off"></i>
+                                <span>Cold Storage</span>
+                            </div>
+                            <div class="security-item">
+                                <i data-lucide="scan"></i>
+                                <span>2FA Enabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="zap"></i>
+                    </div>
+                    <h3 class="feature-title">Lightning Fast Swaps</h3>
+                    <p class="feature-description">
+                        Exchange between 1000+ tokens instantly with the best rates powered by advanced DEX aggregation.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="feature-title">Advanced Analytics</h3>
+                    <p class="feature-description">
+                        Track your portfolio performance with detailed insights, price alerts, and market analysis.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="credit-card"></i>
+                    </div>
+                    <h3 class="feature-title">Crypto Card</h3>
+                    <p class="feature-description">
+                        Spend your crypto anywhere with our virtual and physical Visa cards. Earn cashback on every
+                        purchase.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="percent"></i>
+                    </div>
+                    <h3 class="feature-title">Earn Rewards</h3>
+                    <p class="feature-description">
+                        Stake your assets and earn up to 12% APY. Flexible terms with no lock-up periods on select
+                        assets.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <h3 class="feature-title">Global Transfers</h3>
+                    <p class="feature-description">
+                        Send money anywhere in the world instantly with near-zero fees. Support for 50+ currencies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Crypto Journey?</h2>
+                <p class="cta-subtitle">
+                    Join over 500,000 users who trust VaultX to manage their digital assets.
+                    Download the app and get started in minutes.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">
+                        <i data-lucide="smartphone"></i>
+                        Download for iOS
+                    </a>
+                    <a href="#" class="btn btn-ghost btn-large">
+                        <i data-lucide="tablet"></i>
+                        Download for Android
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon" style="width: 36px; height: 36px; border-radius: 10px;">
+                            <i data-lucide="wallet" style="width: 18px; height: 18px;"></i>
+                        </div>
+                        VaultX
+                    </div>
+                    <p class="footer-description">
+                        The most secure and intuitive crypto wallet.
+                        Buy, sell, swap, and earn with confidence.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i data-lucide="twitter" style="width: 18px; height: 18px;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="github" style="width: 18px; height: 18px;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="linkedin" style="width: 18px; height: 18px;"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i data-lucide="instagram" style="width: 18px; height: 18px;"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Card</a></li>
+                        <li><a href="#">Earn</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 VaultX. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Particle System
+        const canvas = document.getElementById('particles');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationId;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas.height;
+            }
+
+            draw() {
+                ctx.fillStyle = `rgba(99, 102, 241, ${this.opacity})`;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function initParticles() {
+            particles = [];
+            const particleCount = Math.min(50, Math.floor((canvas.width * canvas.height) / 15000));
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function connectParticles() {
+            const maxDistance = 100;
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < maxDistance) {
+                        const opacity = (1 - distance / maxDistance) * 0.15;
+                        ctx.strokeStyle = `rgba(99, 102, 241, ${opacity})`;
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            particles.forEach(particle => {
+                particle.update();
+                particle.draw();
+            });
+
+            connectParticles();
+            animationId = requestAnimationFrame(animateParticles);
+        }
+
+        // Initialize
+        resizeCanvas();
+        initParticles();
+        animateParticles();
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
+        // Navigation Scroll Effect
+        const nav = document.querySelector('.nav');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        }, { passive: true });
+
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Feature Cards Animation
+        gsap.utils.toArray('.feature-card').forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                },
+                y: 60,
+                opacity: 0,
+                duration: 0.8,
+                delay: i * 0.1,
+                ease: 'power3.out'
+            });
+        });
+
+        // Section Header Animation
+        gsap.from('.section-header', {
+            scrollTrigger: {
+                trigger: '.section-header',
+                start: 'top 85%',
+                toggleActions: 'play none none reverse'
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+        });
+
+        // CTA Section Animation
+        gsap.from('.cta-container', {
+            scrollTrigger: {
+                trigger: '.cta-section',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            },
+            y: 60,
+            opacity: 0,
+            duration: 1,
+            ease: 'power3.out'
+        });
+
+        // Hero Parallax
+        gsap.to('.phone-mockup', {
+            scrollTrigger: {
+                trigger: '.hero',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: 1
+            },
+            y: 100,
+            rotateY: 10,
+            ease: 'none'
+        });
+
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Performance: Pause particles when tab is hidden
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                cancelAnimationFrame(animationId);
+            } else {
+                animateParticles();
+            }
+        });
+    </script>
+</body>
+
+</html>

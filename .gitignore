@@ -1,0 +1,101 @@
+# ============================================
+# YouTube Monorepo .gitignore
+# ============================================
+
+# --- Node.js & Package Managers ---
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.pnp.*
+
+# --- Remotion Build Artifacts ---
+.remotion/
+out/
+dist/
+build/
+*.log
+
+# --- Turborepo Cache ---
+.turbo/
+
+# --- Video Files (Strategy A: Local Only) ---
+# Keep these local or sync via cloud storage
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.m4v
+*.mpg
+*.mpeg
+
+# --- Audio Files (Large) ---
+*.wav
+*.aiff
+*.flac
+*.mp3
+*.m4a
+*.aac
+*.ogg
+*.wma
+*.opus
+*.alac
+
+# --- Document Files (Can be large) ---
+*.pdf
+*.psd
+*.ai
+*.indd
+
+# --- Archives ---
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# --- Image Sequences (Can be large) ---
+*.exr
+*.dpx
+*.tiff
+*.tif
+
+# --- DaVinci Resolve Project Files ---
+*.drp
+*.drt
+03_Resolve/*.drp
+
+# --- OS-Specific Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- IDE & Editor Files ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Environment & Secrets ---
+.env.local
+.env.*.local
+.env
+
+# --- Temporary Files ---
+*.tmp
+*.temp
+.cache/
+
+# --- Windows Specific ---
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# --- macOS Specific ---
+.DS_Store
+.AppleDouble
+.LSOverride

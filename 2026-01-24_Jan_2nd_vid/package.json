@@ -1,0 +1,40 @@
+{
+  "name": "video-remotion",
+  "version": "1.0.0",
+  "description": "Programmatic video editing",
+  "scripts": {
+    "start": "remotion studio",
+    "dev": "remotion studio",
+    "build": "remotion render",
+    "upgrade": "remotion upgrade",
+    "test": "eslint src --ext ts,tsx,js,jsx"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.410",
+    "@remotion/media": "^4.0.0",
+    "@remotion/paths": "^4.0.410",
+    "@remotion/shapes": "^4.0.0",
+    "@remotion/three": "^4.0.410",
+    "@types/react": "^18.0.0",
+    "@types/three": "^0.182.0",
+    "@types/web": "^0.0.198",
+    "lucide-react": "^0.563.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "remotion": "^4.0.0",
+    "three": "^0.182.0",
+    "typescript": "^5.9.3",
+    "zod": "3.22.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "zod": "3.22.3"
+    }
+  }
+}

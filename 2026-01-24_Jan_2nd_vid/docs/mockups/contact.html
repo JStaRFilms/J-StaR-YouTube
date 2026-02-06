@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Desert Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: { 50: '#FDFCFB', 100: '#FAF9F6', 200: '#E7E5E4', 300: '#D6D3D1', 900: '#78716C' },
+                        stone: { 800: '#292524', 900: '#1C1917' },
+                        terra: { 400: '#FB923C', 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        sage: { 500: '#84CC16', 600: '#65A30D', 700: '#4D7C0F', 800: '#3F6212' }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C1917;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-sand-100/90 backdrop-blur-md border-b border-sand-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="home.html" class="text-2xl font-black tracking-tighter hover:text-terra-600 transition-colors">
+                DESERT.TECH
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-stone-600">
+                <a href="home.html" class="hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="hover:text-stone-900 transition-colors">Services</a>
+                <a href="portfolio.html" class="hover:text-stone-900 transition-colors">Work</a>
+                <a href="contact.html" class="text-terra-600">Contact</a>
+            </div>
+            <a href="contact.html"
+                class="bg-stone-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-terra-600 transition-colors">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 md:gap-24">
+
+            <!-- Information -->
+            <div>
+                <h1 class="text-5xl font-black mb-8 text-stone-900">Let's build something enduring.</h1>
+                <p class="text-xl text-stone-600 mb-12 leading-relaxed">
+                    Ready to navigate the digital landscape? Reach out to us for a consultation, quote, or just to chat
+                    about the future.
+                </p>
+
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-sand-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-stone-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Headquarters</h3>
+                            <p class="text-stone-600">101 Oasis Blvd, Suite 400<br>Palm Springs, CA 92262</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-sand-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="mail" class="w-5 h-5 text-stone-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Email</h3>
+                            <p class="text-stone-600">hello@desert.tech<br>careers@desert.tech</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-sand-200 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i data-lucide="phone" class="w-5 h-5 text-stone-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Phone</h3>
+                            <p class="text-stone-600">+1 (555) 123-4567<br>Mon-Fri, 9am-6pm PST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-white p-8 md:p-10 rounded-2xl border border-sand-200 shadow-sm">
+                <form class="space-y-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-stone-700">First Name</label>
+                            <input type="text"
+                                class="w-full bg-sand-50 border border-sand-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold text-stone-700">Last Name</label>
+                            <input type="text"
+                                class="w-full bg-sand-50 border border-sand-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-stone-700">Email Address</label>
+                        <input type="email"
+                            class="w-full bg-sand-50 border border-sand-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-stone-700">Subject</label>
+                        <select
+                            class="w-full bg-sand-50 border border-sand-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all appearance-none">
+                            <option>New Project Inquiry</option>
+                            <option>Partnership</option>
+                            <option>General Question</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold text-stone-700">Message</label>
+                        <textarea rows="4"
+                            class="w-full bg-sand-50 border border-sand-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-terra-600/20 focus:border-terra-600 transition-all resize-none"></textarea>
+                    </div>
+
+                    <button type="button"
+                        class="w-full bg-terra-600 text-white font-bold py-4 rounded-lg hover:bg-terra-700 transition-colors shadow-lg shadow-terra-600/20">
+                        Send Message
+                    </button>
+
+                    <p class="text-xs text-center text-stone-400 mt-4">
+                        We respect your privacy. No spam, ever.
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-stone-900 text-sand-100 py-12 text-center text-sm text-stone-500">
+        <p>&copy; 2026 Desert Tech Agency.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

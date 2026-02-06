@@ -1,0 +1,178 @@
+# Production Plan 🎬
+
+> **Video**: I Found the Best Way to Use Google Antigravity  
+> **Target Length**: 12-15 minutes  
+> **Style**: Face hook → Screencast tutorial
+
+---
+
+## 📹 PRE-PRODUCTION CHECKLIST
+
+### Equipment Ready
+
+- [x] Camera/phone charged + clean lens
+- [x] Microphone tested (check levels)
+- [x] Ring light / window light positioned (soft, even, no shadows on face)
+- [x] Script open on second monitor or phone
+
+### Workspace Ready
+
+- [x] Find clean wall/corner for face cam shots
+- [x] Clear desktop (close notifications, Slack, etc.)
+- [x] Antigravity open, fresh session ready
+- [x] Workflow files installed in `.agent/workflows/`
+
+### Demo App Prep
+
+- [x] Test-run Genesis → Design → Build workflow once
+- [x] Have the Slideshow Converter demo ready to build
+- [x] Know what "keyboard nav" feature you'll add in Segment 4
+
+---
+
+## 🎥 FILMING PLAN
+
+### Shot List
+
+| #   | Type                    | Content              | Notes                                                           |
+| --- | ----------------------- | -------------------- | --------------------------------------------------------------- |
+| 1   | **Face Cam**            | Hook (0:00-0:45)     | Direct to camera, high energy, memorize 1-2 sentences at a time |
+| 2   | **B-Roll Insert**       | You working at desk  | 10-15 seconds, can film separately                              |
+| 3   | **Screen Record**       | YouTube scroll       | Record yourself scrolling "google antigravity tutorial" results |
+| 4   | **Screen Record**       | Antigravity settings | Show workflow folder setup                                      |
+| 5   | **Screen Record**       | Genesis demo         | Run `/init_vibecode_genesis` live                               |
+| 6   | **Screen Record**       | Design demo          | Run `/init_vibecode_design` live                                |
+| 7   | **Screen Record**       | Build demo           | Run `/build_vibecode_project_v2` live                           |
+| 8   | **Screen Record**       | App running          | Show Slideshow Converter working                                |
+| 9   | **Screen Record**       | Add feature          | Keyboard nav implementation                                     |
+| 10  | **Face Cam (Optional)** | Outro                | Can stay on screen share                                        |
+
+### Filming Tips
+
+- **Chunking Method**: Look at script → Memorize 1-2 sentences → Look at lens → Deliver with 110% energy → Pause
+- **Eye Contact**: Locked on lens during delivery (viewer's soul)
+- **Energy**: Film 20% higher energy than feels natural—it looks normal on camera
+- **Multiple Takes**: Do each face cam line 2-3 times, pick the best
+
+---
+
+## ✂️ EDIT NOTES
+
+### The Rules
+
+| Rule                  | Implementation                                                   |
+| --------------------- | ---------------------------------------------------------------- |
+| **Remove the Air**    | Cut ALL gaps, breaths, "ums"—audio should look like a brick wall |
+| **3-5 Second Rule**   | Screen must change every 3-5 seconds                             |
+| **Pattern Interrupt** | Every 45-60 sec, do something drastic (zoom, SFX, graphic)       |
+
+### Visual Rotation (Cycle Through These)
+
+1. **A-Roll**: Your face or voice
+2. **Punch-In**: 1.1x-1.2x zoom on face for emphasis
+3. **Screen Share**: The demo
+4. **Text Overlays**: Highlight keywords ("Genesis", "Design", "Build")
+5. **B-Roll Inserts**: You working (break up long screen sections)
+
+### Timestamps + Visual Notes
+
+| Timestamp   | Visual                   | Action                                |
+| ----------- | ------------------------ | ------------------------------------- |
+| 0:00-0:05   | Face cam                 | Strong first frame, direct to lens    |
+| 0:05-0:15   | Screen: YouTube scroll   | Fast-forward, show sea of videos      |
+| 0:15-0:30   | B-roll montage           | You working, typing, coding           |
+| 0:30-0:45   | Preview of final app     | Quick tease of Slideshow Converter    |
+| 0:45-3:00   | Screen: Settings + Setup | Show folder, explain workflow adding  |
+| 3:00-6:00   | Screen: Genesis          | PRD generation, scroll through output |
+| 6:00-8:00   | Screen: Design           | Design system + mockups               |
+| 8:00-11:00  | Screen: Build            | Terminal, files, app running          |
+| 11:00-13:00 | Screen: Add feature      | Keyboard nav, quick test              |
+| 13:00+      | Screen or face cam       | Outro with CTA                        |
+
+### Sound Design
+
+| Section      | Music Vibe                           | SFX                                     |
+| ------------ | ------------------------------------ | --------------------------------------- |
+| Hook         | High energy, building tension        | Woosh on text overlays                  |
+| Body         | Subtle driving beat, not distracting | Pop on workflow command, rise on output |
+| Build reveal | Triumphant, resolving                | Success chime when app runs             |
+| Outro        | Fade down, clean                     | Subtle click on subscribe CTA           |
+
+---
+
+## 📝 YOUTUBE UPLOAD PREP
+
+### Title
+
+```
+I Found the Best Way to Use Google Antigravity
+```
+
+### Description Template
+
+```
+Everyone's using Antigravity wrong. Here's the workflow that actually works.
+
+🔗 LINKS:
+• Google Antigravity: [INSERT LINK]
+• VibeCode Workflow Files (FREE): [INSERT GITHUB LINK]
+• Demo App Source Code: [INSERT LINK IF PUBLISHING]
+
+⏱️ TIMESTAMPS:
+0:00 - The Problem
+0:45 - How to Set Up Workflows
+3:00 - Phase 1: Genesis
+6:00 - Phase 2: Design
+8:00 - Phase 3: Build
+11:00 - Adding Features
+13:00 - What's Next
+
+📌 WHAT YOU'LL LEARN:
+• The VibeCode Protocol (Genesis → Design → Build)
+• How to stop copy-pasting chaos
+• Building a Markdown-to-Slideshow app from scratch
+
+🔔 Subscribe for more AI coding workflows.
+
+#GoogleAntigravity #AICoding #VibeCode #CodingTutorial
+```
+
+### Tags
+
+```
+google antigravity, google antigravity tutorial, antigravity ai, antigravity coding, ai coding assistant, vibecode, ai workflow, coding with ai, google ai coding, antigravity for beginners, how to use antigravity, ai pair programming, coding tutorial 2026
+```
+
+### Thumbnail A/B Test
+
+Upload with Concept C (90% Stat) first. Test against Concept A and B if platform supports it.
+
+---
+
+## ✅ FINAL QC CHECKLIST
+
+### Before Export
+
+- [x] **Boredom Test**: Watch video—cut anywhere your mind wanders
+- [x] **Mute Test**: Watch on mute—still visually engaging?
+- [x] **Audio Check**: No clipping, consistent levels, music not too loud
+- [x] **Text Legible**: All text overlays readable on mobile
+
+### Before Upload
+
+- [x] Title matches packaging doc
+- [x] Description has all links + timestamps
+- [x] Tags added
+- [x] Thumbnail uploaded
+- [x] End screen added (subscribe + next video)
+- [x] Cards added at key moments
+
+---
+
+## 🚀 POST-UPLOAD
+
+- [x] Pin a comment: "Workflow files linked in description 👇"
+- [x] Share to Twitter/X with teaser clip
+- [x] Reply to first 10 comments within 1 hour (algorithm boost)
+
+**Gemini link** :https://gemini.google.com/app/8a84624fe5a54343

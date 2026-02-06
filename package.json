@@ -1,0 +1,39 @@
+{
+    "name": "jstar-youtube-monorepo",
+    "version": "1.0.0",
+    "private": true,
+    "description": "YouTube video production monorepo with shared Remotion components and Turborepo caching",
+    "scripts": {
+        "dev": "turbo run dev --filter=$env:VIDEO",
+        "studio": "pnpm --filter $env:VIDEO studio",
+        "render": "pnpm --filter $env:VIDEO render",
+        "build": "turbo run build",
+        "build:video": "turbo run build --filter=$env:VIDEO",
+        "lint": "turbo run lint",
+        "type-check": "turbo run type-check",
+        "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+        "clean": "turbo run clean && rm -rf node_modules .turbo",
+        "clean:cache": "turbo run clean && rm -rf .turbo",
+        "new-video": "powershell -ExecutionPolicy Bypass -File ./scripts/new-video.ps1",
+        "install-all": "pnpm install"
+    },
+    "devDependencies": {
+        "@remotion/cli": "^4.0.0",
+        "@remotion/bundler": "^4.0.0",
+        "remotion": "^4.0.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "typescript": "^5.6.3",
+        "@types/react": "^18.3.12",
+        "eslint": "^9.0.0",
+        "prettier": "^3.0.0",
+        "tailwindcss": "^4.0.0",
+        "postcss": "^8.0.0",
+        "turbo": "^2.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "pnpm": ">=8.0.0"
+    },
+    "packageManager": "pnpm@8.15.0"
+}

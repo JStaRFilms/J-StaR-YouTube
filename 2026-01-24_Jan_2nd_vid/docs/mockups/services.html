@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Desert Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sand: { 50: '#FDFCFB', 100: '#FAF9F6', 200: '#E7E5E4', 300: '#D6D3D1', 900: '#78716C' },
+                        stone: { 800: '#292524', 900: '#1C1917' },
+                        terra: { 400: '#FB923C', 500: '#F97316', 600: '#EA580C', 700: '#C2410C' },
+                        sage: { 500: '#84CC16', 600: '#65A30D', 700: '#4D7C0F', 800: '#3F6212' }
+                    },
+                    fontFamily: {
+                        serif: ['Merriweather', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background-color: #FAF9F6;
+            color: #1C1917;
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+
+<body class="flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 bg-sand-100/90 backdrop-blur-md border-b border-sand-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="home.html" class="text-2xl font-black tracking-tighter hover:text-terra-600 transition-colors">
+                DESERT.TECH
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium text-sm text-stone-600">
+                <a href="home.html" class="hover:text-stone-900 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-stone-900 transition-colors">About</a>
+                <a href="services.html" class="text-terra-600">Services</a>
+                <a href="portfolio.html" class="hover:text-stone-900 transition-colors">Work</a>
+                <a href="contact.html" class="hover:text-stone-900 transition-colors">Contact</a>
+            </div>
+            <a href="contact.html"
+                class="bg-stone-900 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-terra-600 transition-colors">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20">
+        <section class="max-w-7xl mx-auto px-6 text-center mb-24">
+            <h1 class="text-5xl font-black mb-6 text-stone-900">Capabilities</h1>
+            <p class="text-xl text-stone-600 max-w-2xl mx-auto">
+                Scalable solutions tailored for longevity. We don't just build for today; we build for the horizon.
+            </p>
+        </section>
+
+        <!-- Pricing/Packages -->
+        <section class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+
+            <!-- Tier 1 -->
+            <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-sm flex flex-col">
+                <div class="mb-6">
+                    <span class="text-xs font-bold tracking-widest uppercase text-stone-500">Seed</span>
+                    <h3 class="text-3xl font-bold mt-2">$2,500<span
+                            class="text-lg font-normal text-stone-400">/mo</span></h3>
+                    <p class="text-stone-600 mt-2 text-sm">Perfect for startups creating their first digital footprint.
+                    </p>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> Landing Page
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> Basic Branding
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> Analytics Setup
+                    </li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg font-bold border-2 border-stone-200 hover:border-terra-600 hover:text-terra-600 transition-colors">Select
+                    Seed</button>
+            </div>
+
+            <!-- Tier 2 (Featured) -->
+            <div
+                class="bg-stone-900 text-white rounded-2xl p-8 shadow-xl relative transform md:-translate-y-4 flex flex-col">
+                <div
+                    class="absolute top-0 right-0 bg-terra-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+                    POPULAR</div>
+                <div class="mb-6">
+                    <span class="text-xs font-bold tracking-widest uppercase text-terra-400">Bloom</span>
+                    <h3 class="text-3xl font-bold mt-2">$5,000<span
+                            class="text-lg font-normal text-stone-500">/mo</span></h3>
+                    <p class="text-stone-400 mt-2 text-sm">For growing companies needing robust architecture.</p>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-3 text-sm text-stone-300">
+                        <i data-lucide="check" class="w-4 h-4 text-terra-500"></i> Multi-page Web App
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-300">
+                        <i data-lucide="check" class="w-4 h-4 text-terra-500"></i> Full Design System
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-300">
+                        <i data-lucide="check" class="w-4 h-4 text-terra-500"></i> SEO Optimization
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-300">
+                        <i data-lucide="check" class="w-4 h-4 text-terra-500"></i> CMS Integration
+                    </li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg font-bold bg-terra-600 hover:bg-terra-700 transition-colors text-white shadow-lg shadow-terra-600/30">Select
+                    Bloom</button>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="bg-white rounded-2xl p-8 border border-sand-200 shadow-sm flex flex-col">
+                <div class="mb-6">
+                    <span class="text-xs font-bold tracking-widest uppercase text-stone-500">Oasis</span>
+                    <h3 class="text-3xl font-bold mt-2">$10k+<span class="text-lg font-normal text-stone-400">/mo</span>
+                    </h3>
+                    <p class="text-stone-600 mt-2 text-sm">Enterprise-grade scale and dedicated support.</p>
+                </div>
+                <ul class="space-y-4 mb-8 flex-grow">
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> Custom Software Dev
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> Dedicated Team
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-700">
+                        <i data-lucide="check" class="w-4 h-4 text-sage-600"></i> 24/7 Support
+                    </li>
+                </ul>
+                <button
+                    class="w-full py-3 rounded-lg font-bold border-2 border-stone-200 hover:border-terra-600 hover:text-terra-600 transition-colors">Contact
+                    Sales</button>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="bg-stone-900 text-sand-100 py-12 text-center text-sm text-stone-500">
+        <p>&copy; 2026 Desert Tech Agency.</p>
+    </footer>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>

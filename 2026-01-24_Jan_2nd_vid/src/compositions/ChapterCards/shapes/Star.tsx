@@ -1,0 +1,17 @@
+import React from 'react';
+
+interface StarProps {
+    size: number;
+    color: string;
+}
+
+export const Star: React.FC<StarProps> = ({ size, color }) => {
+    return (
+        <svg width={size} height={size} viewBox="0 0 100 100">
+            <polygon
+                points="50,5 61,40 98,40 68,62 79,97 50,75 21,97 32,62 2,40 39,40"
+                fill={color}
+            />
+        </svg>
+    );
+};

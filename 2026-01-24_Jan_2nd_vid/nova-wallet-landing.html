@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Wallet - The Future of Crypto Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #0ea5e9;
+            --accent: #10b981;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --card-bg: rgba(30, 41, 59, 0.5);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--darker);
+            color: var(--light);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 1rem 2rem;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        nav.scrolled {
+            padding: 0.75rem 2rem;
+            background: rgba(15, 23, 42, 0.95);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--light);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-ghost {
+            background: transparent;
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-ghost:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .hero-gradient {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.4;
+        }
+
+        .hero-gradient-1 {
+            background: var(--primary);
+            top: -200px;
+            right: -200px;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-gradient-2 {
+            background: var(--secondary);
+            bottom: -200px;
+            left: -200px;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        .hero-gradient-3 {
+            background: var(--accent);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px;
+            height: 600px;
+            animation: pulse 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(30px, 30px);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--primary);
+            margin-bottom: 2rem;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-badge span {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.1s both;
+        }
+
+        .hero-title .gradient-text {
+            background: linear-gradient(135deg, #fff 0%, #a5b4fc 50%, #67e8f9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 5rem;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-stat-label {
+            font-size: 0.875rem;
+            color: var(--gray);
+            margin-top: 0.25rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Phone Mockup */
+        .hero-phone {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 320px;
+            height: 650px;
+            background: linear-gradient(145deg, #1e293b, #0f172a);
+            border-radius: 40px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+            animation: phoneFloat 6s ease-in-out infinite;
+            overflow: hidden;
+            display: none;
+        }
+
+        @keyframes phoneFloat {
+
+            0%,
+            100% {
+                transform: translateY(-50%) rotate(-5deg);
+            }
+
+            50% {
+                transform: translateY(-52%) rotate(-3deg);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .hero-phone {
+                display: block;
+            }
+        }
+
+        .phone-screen {
+            padding: 1.5rem;
+            height: 100%;
+        }
+
+        .phone-notch {
+            width: 120px;
+            height: 30px;
+            background: var(--darker);
+            margin: 0 auto 1rem;
+            border-radius: 20px;
+        }
+
+        .phone-balance {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 20px;
+            padding: 1.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .phone-balance-label {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .phone-balance-value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        .phone-balance-change {
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.25rem 0.75rem;
+            border-radius: 100px;
+            display: inline-block;
+        }
+
+        .phone-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .phone-card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .phone-card-content {
+            flex: 1;
+        }
+
+        .phone-card-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .phone-card-amount {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        .phone-card-value {
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 8rem 2rem;
+            position: relative;
+        }
+
+        .features-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 100px;
+            font-size: 0.875rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 24px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-icon.blue {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(99, 102, 241, 0.05));
+            color: #818cf8;
+        }
+
+        .feature-icon.green {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.05));
+            color: #34d399;
+        }
+
+        .feature-icon.cyan {
+            background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(14, 165, 233, 0.05));
+            color: #38bdf8;
+        }
+
+        .feature-icon.purple {
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.2), rgba(168, 85, 247, 0.05));
+            color: #c084fc;
+        }
+
+        .feature-icon.orange {
+            background: linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(249, 115, 22, 0.05));
+            color: #fb923c;
+        }
+
+        .feature-icon.pink {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(236, 72, 153, 0.05));
+            color: #f472b6;
+        }
+
+        .feature-title {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-description {
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.05), transparent);
+        }
+
+        .steps-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .step-card {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+        }
+
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-description {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .step-connector {
+            position: absolute;
+            top: 50px;
+            right: -1rem;
+            width: calc(100% - 60px);
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            display: none;
+        }
+
+        @media (min-width: 901px) {
+            .step-connector {
+                display: block;
+            }
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 8rem 2rem;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(14, 165, 233, 0.1));
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            border-radius: 32px;
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.2), transparent 70%);
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-subtitle {
+            font-size: 1.125rem;
+            color: var(--gray);
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer */
+        footer {
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr repeat(3, 1fr);
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .footer-brand {
+            max-width: 300px;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-description {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .footer-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--light);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-copyright {
+            color: var(--gray);
+            font-size: 0.875rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 900px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links,
+            .nav-cta {
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--darker);
+                padding: 1rem 2rem 2rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            }
+
+            .nav-links.active a {
+                padding: 0.75rem 0;
+            }
+        }
+
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">◆</div>
+                Nova
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#security">Security</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#" class="btn btn-ghost">Sign In</a>
+                <a href="#" class="btn btn-primary">Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient hero-gradient-1"></div>
+            <div class="hero-gradient hero-gradient-2"></div>
+            <div class="hero-gradient hero-gradient-3"></div>
+        </div>
+
+        <!-- Phone Mockup -->
+        <div class="hero-phone">
+            <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <div class="phone-balance">
+                    <div class="phone-balance-label">Total Balance</div>
+                    <div class="phone-balance-value">$24,892.45</div>
+                    <div class="phone-balance-change">↑ 12.4% this month</div>
+                </div>
+                <div class="phone-card">
+                    <div class="phone-card-icon" style="background: linear-gradient(135deg, #f7931a, #ffb84d);">₿</div>
+                    <div class="phone-card-content">
+                        <div class="phone-card-name">Bitcoin</div>
+                        <div class="phone-card-amount">0.45 BTC</div>
+                    </div>
+                    <div class="phone-card-value">$18,234</div>
+                </div>
+                <div class="phone-card">
+                    <div class="phone-card-icon" style="background: linear-gradient(135deg, #627eea, #8b9eff);">Ξ</div>
+                    <div class="phone-card-content">
+                        <div class="phone-card-name">Ethereum</div>
+                        <div class="phone-card-amount">2.1 ETH</div>
+                    </div>
+                    <div class="phone-card-value">$4,658</div>
+                </div>
+                <div class="phone-card">
+                    <div class="phone-card-icon" style="background: linear-gradient(135deg, #26a17b, #4ce8b6);">◎</div>
+                    <div class="phone-card-content">
+                        <div class="phone-card-name">Solana</div>
+                        <div class="phone-card-amount">15 SOL</div>
+                    </div>
+                    <div class="phone-card-value">$2,000</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>✦</span> Now with AI-Powered Insights
+            </div>
+            <h1 class="hero-title">
+                The Future of <span class="gradient-text">Crypto Management</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience seamless crypto transactions, real-time market analytics, and bank-grade security — all in
+                one beautiful app.
+            </p>
+            <div class="hero-cta">
+                <a href="#" class="btn btn-primary btn-large">
+                    Download for Free
+                </a>
+                <a href="#" class="btn btn-ghost btn-large">
+                    Watch Demo
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat-value">2M+</div>
+                    <div class="hero-stat-label">Active Users</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">$15B+</div>
+                    <div class="hero-stat-label">Volume Traded</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat-value">99.9%</div>
+                    <div class="hero-stat-label">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">
+                    ✦ Features
+                </div>
+                <h2 class="section-title">Everything You Need to Manage Your Crypto</h2>
+                <p class="section-subtitle">
+                    Powerful tools and features designed to make crypto management simple, secure, and enjoyable.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon blue">📊</div>
+                    <h3 class="feature-title">Real-Time Portfolio Tracking</h3>
+                    <p class="feature-description">
+                        Monitor all your crypto assets in real-time with live price updates, portfolio performance
+                        charts, and customizable alerts.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon green">⚡</div>
+                    <h3 class="feature-title">Lightning-Fast Swaps</h3>
+                    <p class="feature-description">
+                        Swap between 500+ cryptocurrencies instantly with the lowest fees and best rates powered by
+                        aggregated DEXs.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon cyan">🔒</div>
+                    <h3 class="feature-title">Bank-Grade Security</h3>
+                    <p class="feature-description">
+                        Your assets are protected by military-grade encryption, hardware security modules, and
+                        multi-signature wallets.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon purple">🤖</div>
+                    <h3 class="feature-title">AI-Powered Insights</h3>
+                    <p class="feature-description">
+                        Get personalized market analysis, price predictions, and investment recommendations powered by
+                        advanced AI.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon orange">🌐</div>
+                    <h3 class="feature-title">Multi-Chain Support</h3>
+                    <p class="feature-description">
+                        Seamlessly manage assets across Ethereum, Solana, Binance Smart Chain, and 50+ other networks.
+                    </p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon pink">🎯</div>
+                    <h3 class="feature-title">DeFi Integration</h3>
+                    <p class="feature-description">
+                        Access decentralized finance protocols directly from your wallet — stake, lend, and earn yields.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="steps-container">
+            <div class="section-header animate-on-scroll">
+                <div class="section-badge">
+                    ✦ How It Works
+                </div>
+                <h2 class="section-title">Get Started in Minutes</h2>
+                <p class="section-subtitle">
+                    Setting up your crypto wallet has never been easier.
+                </p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Download & Install</h3>
+                    <p class="step-description">
+                        Get Nova Wallet from the App Store or Google Play Store. It's free to download and takes less
+                        than a minute.
+                    </p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Create Your Wallet</h3>
+                    <p class="step-description">
+                        Set up your wallet with a secure seed phrase. We'll guide you through the process step by step.
+                    </p>
+                    <div class="step-connector"></div>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Start Trading</h3>
+                    <p class="step-description">
+                        Fund your wallet and start swapping, staking, and managing your crypto portfolio instantly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container animate-on-scroll">
+            <h2 class="cta-title">Ready to Take Control?</h2>
+            <p class="cta-subtitle">
+                Join millions of users who trust Nova Wallet for their crypto journey.
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary btn-large">
+                    Download Now
+                </a>
+                <a href="#" class="btn btn-ghost btn-large">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">◆</div>
+                        Nova
+                    </div>
+                    <p class="footer-description">
+                        The most secure and user-friendly crypto wallet for everyone. Manage, trade, and grow your
+                        digital assets with confidence.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Nova Wallet. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" title="Twitter">𝕏</a>
+                    <a href="#" title="Discord">D</a>
+                    <a href="#" title="Telegram">✈</a>
+                    <a href="#" title="GitHub">⌥</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                    mobileMenuBtn.textContent = '☰';
+                }
+            });
+        });
+
+        // Counter animation for stats
+        function animateCounter(element, target, suffix = '') {
+            let current = 0;
+            const increment = target / 60;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = (typeof target === 'string' ? target : Math.floor(current)) + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current) + suffix;
+                }
+            }, 30);
+        }
+
+        // Parallax effect for hero gradients
+        document.addEventListener('mousemove', (e) => {
+            const gradients = document.querySelectorAll('.hero-gradient');
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+
+            gradients.forEach((gradient, index) => {
+                const factor = (index + 1) * 0.5;
+                gradient.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+            });
+        });
+    </script>
+</body>
+
+</html>

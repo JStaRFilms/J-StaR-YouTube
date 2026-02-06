@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoWallet - Secure & Simple</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #0f0f23;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a3a 0%, #0f0f23 100%);
+            padding: 8rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff00ff;stop-opacity:0.1" /><stop offset="100%" style="stop-color:%2300ffff;stop-opacity:0.1" /></linearGradient></defs><rect width="100" height="100" fill="url(%23grad)" /></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(90deg, #ffffff 0%, #a0a0ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            color: #b8b8ff;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #6e45e2 0%, #88d3ce 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(110, 69, 226, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(110, 69, 226, 0.5);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            background-color: #1a1a3a;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 4rem;
+            color: #ffffff;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background-color: #2a2a4a;
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: #88d3ce;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .feature-card p {
+            color: #b8b8ff;
+            line-height: 1.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 5rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .features {
+                padding: 4rem 1.5rem;
+            }
+
+            .features h2 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content, .feature-card {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .feature-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .feature-card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .feature-card:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Crypto, Your Way</h1>
+            <p>Secure, simple, and powerful crypto wallet for managing your digital assets with confidence.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Bank-Grade Security</h3>
+                <p>Industry-leading encryption and multi-factor authentication to keep your assets safe from threats.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Lightning Fast</h3>
+                <p>Instant transactions with our optimized blockchain network connections.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Multi-Currency Support</h3>
+                <p>Manage Bitcoin, Ethereum, and 100+ other cryptocurrencies in one place.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Mobile Friendly</h3>
+                <p>Access your wallet anytime, anywhere with our responsive design.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple scroll animations
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach(card => {
+                const cardPosition = card.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+
+                if (cardPosition < screenPosition) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize cards as hidden for animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+        });
+    </script>
+</body>
+</html>
