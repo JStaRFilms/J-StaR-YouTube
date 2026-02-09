@@ -1,0 +1,146 @@
+[01:00:00:04 - 01:00:13:10]
+ Hi, Aklastem. I'm John. I'm releasing my camera as it is right now. It's basically level 55 here in Nigeria. So you said you needed a vibe code out. Someone would turn Slack messages into prototypes by the end of the day.
+
+[01:00:13:10 - 01:00:16:16]
+ don't know what better way to say that. That's basically me
+
+[01:00:16:16 - 01:00:20:06]
+ maybe showing you a demo. So if you could spare me some
+
+[01:00:20:06 - 01:00:20:18]
+ moments.
+
+[01:00:20:18 - 01:00:24:21]
+ Let's start with this. So firstly I'll be showing you Blink.
+
+[01:00:24:21 - 01:00:30:29]
+ I hit context switching. So I built a Python tool that lets me query AI anywhere on my Windows
+
+[01:00:30:29 - 01:00:44:25]
+ instantly. So I packaged it and then I turned it to an exe that you could actually try out. But yeah, I use it every single day from texting people to just like asking questions in general without having to open a browser or do something like that.
+
+[01:00:44:25 - 01:01:41:26]
+ Alright, okay, so this is a quick demo of what Blink is like basically. So I could actually just open anyway, including let's say this, and I could be like, "Hello, what's good?" like this, and I can hit the shortcut, and it's just streaming instantly. For example, one of the use cases I use for for example, something like this, I can select all the text here, come back to maybe Notepad or even in my IDE for example, and be like, "Huh, what do you think about this plan?" Do you understand? I'm pressing on that shortcut, and then it's going to use that context that I put in the like a copied and pasted here, and it's going to split back this and be like, "Okay, to be clear, these are well organized, blah, blah, obviously it's well organized." But you get the point. And sometimes I can actually use it to write code for example. I could be like, "Write a simple HTML, CSS, JS website about anything. This this enter."
+
+[01:01:42:27 - 01:01:49:23]
+ And then, you see, live and direct in that exact point. And this is working anywhere I am on my computer.
+
+[01:01:50:23 - 01:01:59:05]
+ I do this cool feature. If I leave, you see, I'm no longer there. When I come back, ideally it should continue from where I stopped, which is just like really cool.
+
+[01:01:59:05 - 01:02:09:07]
+ Then next I have JSTAR code reviewer. This is actually me trying to ensure that whatever I'm shipping to either myself or
+
+[01:02:09:07 - 01:02:10:08]
+ my friends
+
+[01:02:10:08 - 01:02:12:03]
+ my general community in general
+
+[01:02:12:03 - 01:02:14:18]
+ it's always up to standard. And
+
+[01:02:14:18 - 01:02:23:05]
+ it makes sure that there is no maybe security vulnerability or maybe logic error that I might have missed anywhere else.
+
+[01:02:23:05 - 01:02:27:26]
+ Now, for a fact, this project is actually a project I started off today. So,
+
+[01:02:27:26 - 01:03:08:09]
+ so you can see the last time I came on this project was around 1pm today. And the first time I was actually on the project was 9am this morning. One of the features I actually do have is I could do reviewer. This is something I made up. So, I basically is using my JSTAR code reviewer stuff and I could say, oh, work on code. On committed changes. And basically, it's just a workflow that has a bunch of rules telling it how to do whatnot and how to use the JSTAR reviewer tool that I made myself. Do you understand? So, everything is really just in the wind to ensure that we have the highest quality at every single given time.
+
+[01:03:08:09 - 01:03:25:08]
+ this is actually a creative operating system I made. I call it Creative OS because what it allows me to do is it allows me to ensure that every single time I'm working all my files are properly arranged. Sometimes I group it by clients, I group it by my personal YouTube videos and how does this happen automatically?
+
+[01:03:25:08 - 01:03:27:14]
+ We're just going to open up the terminal anywhere on our computer.
+
+[01:03:27:14 - 01:03:30:23]
+ the channel you're going to see, I'm on my root directory here and I'm just going to write COS
+
+[01:03:30:23 - 01:03:33:02]
+ And we're just going to call it Ad class, like this. And then, since it's client work, like this, we're going to write COS new. And we're just going to call it Ad class, like this.
+
+[01:03:33:02 - 01:03:37:23]
+ then, since it's client work, like this, we're just going to say, "Nemo, the client is Ad class."
+
+[01:03:37:23 - 01:03:38:25]
+ Or, you know what, let's just say,
+
+[01:03:38:25 - 01:03:39:10]
+ class
+
+[01:03:39:10 - 01:03:41:03]
+ That makes more sense.
+
+[01:03:41:03 - 01:03:43:05]
+ And then, we're going to have Ad class and
+
+[01:03:43:05 - 01:03:44:28]
+ this a code project, so we're just going to write code.
+
+[01:03:44:28 - 01:03:46:13]
+ And then, G to initiate Git.
+
+[01:03:46:13 - 01:03:47:02]
+ And,
+
+[01:03:47:02 - 01:03:47:14]
+ boom!
+
+[01:03:47:14 - 01:03:49:17]
+ Absolutely beautiful. This saves me, like,
+
+[01:03:49:17 - 01:03:52:22]
+ And for example, if I come back to the client's folder, you can see I already have a new folder
+
+[01:03:52:22 - 01:03:55:04]
+ Nemo of the particular project Ad class demo.
+
+[01:03:55:04 - 01:03:58:11]
+ the kit's already initiated. I have a place to put in my notes,
+
+[01:03:58:11 - 01:04:01:17]
+ some documents that I use every single time with all my projects.
+
+[01:04:01:17 - 01:04:02:17]
+ And everything's ready to
+
+[01:04:02:17 - 01:04:05:01]
+ And that's literally how all my projects work.
+
+[01:04:05:01 - 01:04:07:01]
+ Including the one that's presently cooking
+
+[01:04:07:01 - 01:04:08:06]
+ the background now.
+
+[01:04:08:06 - 01:04:08:16]
+ yeah,
+
+[01:04:08:16 - 01:04:12:20]
+ that's literally it. If you can see, the folder structure is kind of flowing that exact same flow.
+
+[01:04:12:20 - 01:04:13:24]
+ Like this, so you can see,
+
+[01:04:13:24 - 01:04:14:10]
+ this is there.
+
+[01:04:14:10 - 01:04:14:21]
+ So,
+
+[01:04:14:21 - 01:04:57:11]
+ tie it all together I built the Vibe Code protocol suits. So it's practically a CLI that initially started off as just a bunch of prompts together which technically still is. But then recently I was like you know what why don't I make this very easy for people to install. Especially with the rise of skills which high key are better than MCP. I'm so sorry but I just had to say that skills. So I was like why don't I just bundle this together. Something they can easily install with just a simple npm command and direct it to wherever you are. So either using anti-gravity or using Closor. You're using cloud code whatever it is. It just makes it very easy or open code or kilo code. It just makes it very very easy for you to get this package.
+
+[01:04:57:11 - 01:04:59:26]
+ your AI agent is like yo let's go.
+
+[01:04:59:26 - 01:05:43:27]
+ here we have the vibe code suit. And you can see it allows us to actually install different levels of stuff. So let's just install everything and let's dump it in. Hmm, where should I dump it? Let's dump it into the art class folder. That would actually be really, really good. So let's dump it here. So I'm going to say country C. And I'm just going to paste this here. And dumped. So now here we have .agents here. We have a bunch of skills that I really, really love. Some of them are cost, all of them are actually custom made. And they have a bunch of workflows that would make, and they have a bunch of legacy ones. That's like older ones that I've now fine-tuned to make better. So yeah, all these things are quality of life stuff that I think that I really love. And I use every single day.
+
+[01:05:43:27 - 01:05:50:23]
+ I'm ready to point the energy at Outclass. Give me a problem and I'll probably get you a prototype before you get back from launch.
+
+[01:05:50:23 - 01:06:07:26]
+ let's build and once more thank you very much for your audience. You can check out my GitHub repository actually to maybe see if the examples I gave are a bit too boring for you. You can find some other things there because mostly I just solve problems I deal with on a day to day basis. So bye!
