@@ -130,6 +130,27 @@ pnpm install
 git status --ignored
 ```
 
-##  License
+## 🎙️ Transcription Tool
+
+A CLI tool for transcribing audio/video files using Groq's Whisper API.
+
+```bash
+# Setup
+cd tools/transcriber
+cp .env.example .env
+# Add your GROQ_API_KEY in .env
+
+# Usage (from root)
+pnpm transcribe "path/to/video.mp4"
+```
+
+Features:
+- **Smart Chunking**: Splits large files into 10-min chunks
+- **Resume Capability**: `pnpm transcribe --resume "file.mp4"`
+- **Rate Limiting**: Handles API limits automatically
+
+[View full documentation](tools/transcriber/README.md)
+
+## 📜 License
 
 Private repository. All rights reserved.
