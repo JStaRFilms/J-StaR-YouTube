@@ -16,7 +16,7 @@
     "clean:cache": "turbo run clean && rm -rf .turbo",
     "new-video": "powershell -ExecutionPolicy Bypass -File ./scripts/new-video.ps1",
     "install-all": "pnpm install",
-    "transcribe": "pnpm --filter @jstar/transcriber transcribe --"
+    "transcribe": "pnpm --filter @jstar/transcriber transcribe"
   },
   "devDependencies": {
     "@remotion/cli": "^4.0.0",

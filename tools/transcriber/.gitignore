@@ -1,0 +1,11 @@
+# Transcriber data
+data/
+
+# Resume state files
+.transcriber-state-*.json
+
+# Node modules
+node_modules/
+
+# Build output
+dist/

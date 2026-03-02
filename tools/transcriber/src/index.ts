@@ -31,6 +31,10 @@ import {
   printInfo,
   printError,
   ResumeState,
+  isFileCompleted,
+  promptReTranscribe,
+  updateFileHistory,
+  FileStatus,
 } from "./utils.js";
 
 // ============================================================================
@@ -44,6 +48,7 @@ interface CLIOptions {
   language?: string;
   resume: boolean;
   noCleanup: boolean;
+  force: boolean; // Force re-transcription without prompt
 }
 
 // ============================================================================
@@ -57,18 +62,28 @@ let isProcessing = false;
 /**
  * Save state before exit on SIGINT
  */
-function handleSIGINT(): void {
+async function handleSIGINT(): Promise<void> {
   if (isProcessing && currentState && currentOutputDir) {
-    console.log("\n\n⚠️  Interrupted! Saving state for resume...");
-    saveResumeState(currentState, currentOutputDir)
-      .then(() => {
-        console.log("💾 State saved. Use --resume to continue.");
-        process.exit(130); // 128 + SIGINT(2)
-      })
-      .catch((err) => {
-        console.error("Failed to save state:", err);
-        process.exit(1);
-      });
+    console.log("\n\n⚠️  Interrupted! Saving state...");
+
+    // Save resume state
+    await saveResumeState(currentState!, currentOutputDir);
+
+    // Update history
+    if (currentState.inputFile) {
+      const outputPath = getOutputPath(
+        currentState.inputFile,
+        currentOutputDir || undefined,
+      );
+      await updateFileHistory(
+        currentState.inputFile,
+        "interrupted",
+        outputPath,
+      );
+    }
+
+    console.log("💾 State saved. Use --resume to continue.");
+    process.exit(130); // 128 + SIGINT(2)
   } else {
     console.log("\n\nInterrupted.");
     process.exit(130);
@@ -102,7 +117,12 @@ function createProgressBar(): cliProgress.SingleBar {
 async function processFile(
   filePath: string,
   options: CLIOptions,
-): Promise<{ success: boolean; outputPath?: string; error?: string }> {
+): Promise<{
+  success: boolean;
+  outputPath?: string;
+  error?: string;
+  skipped?: boolean;
+}> {
   const absolutePath = path.resolve(filePath);
   const baseName = path.basename(absolutePath, path.extname(absolutePath));
 
@@ -122,6 +142,17 @@ async function processFile(
     return { success: false, error };
   }
 
+  // Check if already completed (unless --force or --resume)
+  if (!options.force && !options.resume) {
+    const alreadyCompleted = await isFileCompleted(absolutePath);
+    if (alreadyCompleted) {
+      const shouldContinue = await promptReTranscribe(absolutePath);
+      if (!shouldContinue) {
+        return { success: true, outputPath, skipped: true };
+      }
+    }
+  }
+
   // Get media info
   let mediaInfo;
   try {
@@ -129,6 +160,7 @@ async function processFile(
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     printError(msg);
+    await updateFileHistory(absolutePath, "failed", outputPath, msg);
     return { success: false, error: msg };
   }
 
@@ -168,6 +200,9 @@ async function processFile(
       chunkPaths: [],
       startedAt: new Date().toISOString(),
     };
+
+    // Mark as in_progress in history
+    await updateFileHistory(absolutePath, "in_progress", outputPath);
   } else {
     currentState = resumeState;
   }
@@ -190,6 +225,7 @@ async function processFile(
   } catch (error) {
     const msg = error instanceof Error ? error.message : String(error);
     printError(`Audio processing failed: ${msg}`);
+    await updateFileHistory(absolutePath, "failed", outputPath, msg);
     return { success: false, error: msg };
   }
 
@@ -261,6 +297,9 @@ async function processFile(
       // Save transcript
       await saveTranscript(fullTranscript, outputPath);
       printSuccess(`Saved: ${outputPath}`);
+
+      // Update history - completed successfully
+      await updateFileHistory(absolutePath, "completed", outputPath);
     } catch (error) {
       progressBar.stop();
       isProcessing = false;
@@ -270,6 +309,10 @@ async function processFile(
 
       // Save state for resume
       await saveResumeState(currentState!, outputDir);
+
+      // Update history - failed
+      await updateFileHistory(absolutePath, "failed", outputPath, msg);
+
       console.log("💾 State saved. Use --resume to continue.");
 
       return { success: false, error: msg };
@@ -319,6 +362,7 @@ async function main(): Promise<void> {
       "Language code, e.g. 'en' (default: auto-detect)",
     )
     .option("--resume", "Resume from last saved state", false)
+    .option("--force", "Force re-transcription without prompting", false)
     .option("--no-cleanup", "Keep temp files after completion", false)
     .action(async (files: string[], options: CLIOptions) => {
       printHeader("🎙️  Groq Whisper Transcriber");
@@ -351,11 +395,14 @@ async function main(): Promise<void> {
       // Process each file
       let successCount = 0;
       let failCount = 0;
+      let skippedCount = 0;
 
       for (const file of validFiles) {
         try {
           const result = await processFile(file, options);
-          if (result.success) {
+          if (result.skipped) {
+            skippedCount++;
+          } else if (result.success) {
             successCount++;
           } else {
             failCount++;
@@ -369,9 +416,16 @@ async function main(): Promise<void> {
 
       // Summary
       console.log("\n" + "━".repeat(30));
-      console.log(
-        `✅ All files processed (${successCount}/${validFiles.length})`,
-      );
+
+      if (skippedCount > 0) {
+        console.log(
+          `✅ Transcribed: ${successCount} | ⏭️  Skipped: ${skippedCount} | ❌ Failed: ${failCount}`,
+        );
+      } else {
+        console.log(
+          `✅ All files processed (${successCount}/${validFiles.length})`,
+        );
+      }
 
       if (failCount > 0) {
         console.log(`❌ Failed: ${failCount}`);
