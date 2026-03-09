@@ -1,0 +1,52 @@
+that's me always locked and loaded what we hacking on tonight
+guy alarm me, this shit is actually working
+chicks, stuff is working guy
+yeah guy this is actually working, it's crazy this is actually working
+
+Now I'm thinking of adding like an AI that's good to talk about So what this would entail probably would obviously would need like an LLM in light one Probably I can use one of we use open router or we use growth growth with the tube So we can have like very low latency
+But then we need a model that we use for audio probably that will be speaking back Whatever. I don't think you should run in locally. We should also be able to send it to the API So if possible, let's get a free one
+We need a face another So we could give it like a persona and whatnot So round the life now are all discourses and then the AI could also have its own Impute on it. You could give it memory. We could give it context. Yes. I was just a bit too many memories
+Let me keep more like woman let's give it You call it like okay before you call it jukes Let me
+Okay, let's just ask how special I don't know about one. Number one, Shoots is the AI's name.
+Two, tech stop coding, the word "not." And it could also be general charts.
+Number four, nodejs on Python. Whisper list is the power of any Python. The computer is built in JS. I can be really mixed stack of Python on YouTube. Nodejs. This is node, but let's use whatever would be easier to host
+Now this module is the best AI module for back and forth discussions. And I think it's only for me.
+And the latency is less than 10 minutes ago. It's crazy. And you can actually stop it while you're doing the conversation. And it's not going to do all the modules that we talked about before. But you're not like, OK, I understand what you're saying. No, no, no. It's actually good to talk about the human. It's crazy.
+How many VRAMs does it involve? How many VRAMs? For VRAM, you need like 0.5, 0.2. What? Walai. Madhu. Yeah. Oh, why don't you use them? The Anisopo Source. Yeah, exactly. On board.
+Okay, so this is my idea. Get back to me with questions and then move forward. If you have any questions, you should make it more likely to succeed with the release time spent. And then get back to me, move forward.
+
+Do you know something crazy? Do you see how I don't know how to get it done? If I hit send, it will actually still work. Because he knows what file is opening here. Do you see? Look at this crazy. He read the exact file. I didn't get to this guy. I got left with this shit. See, if you look at the thought process. You see, he wants me to review the IDM document and come up with questions.
+where in the application or in the document like the mocho sign the docs okay
+I knew it I knew it I knew it was hydration I knew it was hydration
+so why is the minor so how do I do it I just click on you have to you have to put the you have to put the Facebook on like
+what was the error body exceeded 1 mb limit you tell me that it's this 10 mb limit is now wait wait wait which of you could you like what was the commit on your iPhone
+it's 10 mb now hahaha I like what it's I'm not blind it's 10 mb
+it should be 1 mb let me try that is that is ui that is ui
+
+okay let's see if it's actually going to work this time let's see if it's going to work
+the mic is not for streaming it's disconnected so let's just try and see what it looks like from another mic now
+it takes a while to start off it takes a while to start off it takes a while to start off mic sorry, it's gone because you want that to know where to check classic SSD versus HDD moment swap that spinning rust for solid state and watch it boot like it's late for work
+hit me with the rest, what's dragging its feet?
+family tech support, the true final boss
+okay, so let's talk about something you know what, you just say something and then let's talk about something
+parodying what? drop the meme, let's roast it
+I said let's talk about something, do you have anything in mind? let's talk about something
+let's riff, VR treadmills, awesome or just expensive foot fans?
+they're expensive for no reason
+hit me awesome or overpriced
+overpriced
+exactly, pay to walk simulator
+
+okay, so in my opinion everything is actually working well so far like if I've been very very good
+tell me a story
+kid plugs in USB first try, woke up in a cold sweat
+okay, tell me a long story, let me see how creative you are
+the neon glow of Alex's studio was the only light in the small apartment a familiar blue shift cast by three massive curved monitors on the desk, the grok cube, a dense block of circuits radiating a subtle purple energy, purred like a content cat
+this was the heart of the system Alex had spent six months assembling the lowest latency conversational engine ever built by an amateur streamer Alex leaned into the microphone alright chat, we're ready for the final test
+if this works my new co-host is finally real he initiated the python script lines of code cascaded across a terminal window on his center screen it was an orchestration of virtual pipelines
+the whole trip SDT to TTS took under 600 milliseconds
+that response streamed simultaneously into the Cartesia text-to-speech engine which spat out the final audio byte stream to the virtual cable
+okay Alex said hitting the hotkey that Active listened hello is anyone home?
+are you asking about physical location or existential presence Alex? her voice said
+chat exploded POGGERS mad shit w what it works she's live Alex laughed exhilarated and slightly terrified
+when he finally signed off he was exhausted but buzzing with energy he leaned back, the blue light of the silent screens reflecting in his eyes he looked at the grok cube, its purple glow pulsing softly he decided he wouldn't clear the context memory tonight "good job today Quora," Alex whispered to the silent room he didn't hit the wake word "hockey" he didn't activate the listening script he was just speaking to the quiet machine
