@@ -1,0 +1,69 @@
+Alright, don't download ESQs, build them instead. Everyone is downloading random ESQs, I'm hoping that it won't. I've seen this a lot with a bunch of my friends, they just hop on to probably SKUs.sh and then they search for random stuff, they download them. It's the main issue, I'm not good at criticizing anybody because I actually did that at the point. But instead of doing that, I actually sat down after some time and actually made custom SKUs based on things I'm doing at the time to ensure that I can custom refine them and make sure that they actually work to the best of my needs. Instead of just randomly picking what somebody else uses in their own workflow.
+
+Now, when you open up anti-gravity, when you pick up anti-gravity for the first time, it's blank. You have no context files, no coding standards, no design systems, no security checks, all you have is absolutely meat. It's good enough for most users and to be honest with you, you're probably fine. But if you really want to step out of that cage and move to the 1% of those that release anti-gravity to the fullest, you have to use custom SKUs and workflows.
+
+The AI can do everything you want, you just haven't told it how to do it.
+
+So that's why for the past 6 months, I've spent so much time building over 64 custom SKUs and 26 workflows. What does these SKUs and workflows do? They make these automatic. The SKUs are auto-activated based on the current task, so you don't have to think about it. The AI decides what SKUs to use.
+
+Course SKUs like security, design, SEO and code reviews, you don't have to download one SKU and pray that it actually works. You're sure that what you're getting from this tutorial is going to work and it's going to be very, very easy.
+
+The links to everything you need to be in the description. But basically, you're going to go to this GitHub link here, right? And you're just going to come down here and you're just going to click on "MPX Vibe Suit Install". So, Tijim, I actually need before now, you probably need nodes to be installed in your system, in case you didn't already have that. But just install it, download one for your PC system and you're good to go. Once you have that installed, you just open up your terminal. Just open up your terminal and you're just going to write "MPX Vibe Suit Install".
+
+Now all these skills are good to install to your system and you're ready to go. How do you know that is all installed? You're good to open up your anti-gravity at the top of them open She's gonna be back and you got to like this and you go to come to if you don't see this open already Just press ctrl L alright press ctrl L or click on this icon at the top here Just click on this now and you come here and click on advanced customization You come to workflows and you should see all of them populated here
+
+You Now for today's project we're actually going to be doing We're going to be building a project from scratch for this project We're going to be building a website a very very beautiful website and already taking my time to actually generate the plan for the website Here, so this is the plan for the website. It's a premium dark mode SARS landing page with vibe coding protocol suits Basically, I'm making a website to showcase all these tools that we have and that's basically it
+
+I don't want any cliche designs like the classic Styles
+
+Last year just go to write Genesis here so you're going to go with vibe Genesis the first one, right? So the AI is going to run all these workflows on all these things now And they just hit send and you'd see that the AI is going to take its time It's going to start reading files good start organizing things a good start really figuring out where things are meant to be in this project
+
+So you guys see it's reading the plan it has already picked up two skills guys He two skills you have been activated the first skill has been activated here is the front-end design skill nice The next skill that has been activated here is the UI UX promax skill So you don't have to think about it the AI is just going to end up doing everything It has to do to make sure that gives you the best results
+
+It's good to analyze the project requirements generates the project requirement documents and github issues Scuffle the project structure and injects the coding guidelines all in one shot for you to start building
+
+See the submitted a design system for us on a site map I see the site map the site map is going to list All the different parts of the website are going to exist and then you have a design system Let me show you what design system looks like
+
+Yup exactly perfecto so you can see see how beautiful this looks Look at how beautiful this looks look at font the font is beautiful Look at how this looks all the buttons look great You can see what it looks like And this my friends is why you need to follow the protocol step by step It's not that complex
+
+Okay, good at the speed of thought This is not a bad start at all This is actually a bad start at all
+
+So the agent is going to go through now and actually scaffold this whole thing You would see that in this whole project see that started reading different skills looking at the next year standards To look at the proper way to use next year's
+
+Says task one is complete. It gives you a full breakdown of what has been done and everything's fine
+
+All right, so now we are moving to task seven right top seven is the one in charge of Remotion of skills walk into is the remotion skill.
+
+Alright, so the task we want to run now is the remotion scale, right? What is remotion? Remotion is just for making animations, like really, really dope animations. Let me show you some examples of some of the remotion projects I've done recently. And I didn't write any, I didn't actually make any of the videos. All the videos were made straight with the AI. Let me show you some of them.
+
+All written by AI code. So, let's just see what the AI is meant to write this time around.
+
+All right, so the agent is actually done with our emotion task, right? So let's quickly check what it is and I'm going to run the emotion scale now, let's see what happens.
+
+Okay. Guy Gemini 3.1 is actually killing this guy. Ooh, yes sir. Yes sir. Okay, this is actually bravo. Bravo.
+
+This, my friends, is ras sensational. I actually like the new version of remotion. It's looking good.
+
+So I'm going to use review code here. And we should hit run. Let's go.
+
+So basically, we see what's happening here, right? I have this skill, this skill is called code review. Can you see? It's for reviewing code. It teaches the AI how to review code, right? So it's going to run through and try and set up the skills.
+
+Then here we're running an audit to check for if there's any vulnerabilities or anything like that. Because the difference between a demo product and a production app is the rigorous automated quality gets, the other sounds. So we need to make sure that everything is actually up to absolute quality at every single point.
+
+And as you can see, it's adding some changes, some fixes here. So was it actually fixing, fixing build errors? So apparently there were some build errors that were causing some issues. Interesting, I had no idea there were some, okay. Remove the unused Y3 transform. Hmm, that actually crazy. Remove unused tag text, remove dead code ternary. And the best part about this is that you need to, the area you do this in your code, that's like, I actually do mine at any time I'm ready to finally push to production, right? I'll just run this whole script and then it goes through and it does everything it needs to do, right?
+
+OK. So now this SEO. So let's look at what that SEO one is about, right? We're going to use the Next-Year Standards on SEO-ready skills. So let's just see how the AI handles those two.
+
+So the thing about this part now is that it does edited the layouts file, right? It added some other things here, some SEO keywords. Making sense, making sense. Then robots.ts. OK. And then a sitemap.
+
+copywriting, conduct a final copy polish pass across all sections of the landing page. So let's run the five prime agents.
+
+Reclaim-- so instead of owning your development environment with the Vibe Suite, it's like, reclaim your development environment with Vibe Suite. It created architecture. Ooh, instead of collection, it's architecture. Oh my god. Absolute. No subscription, just a variety. It said, no subscription. Absolute. Oh my god. Deploy now instead of get started. Hm. Clock it. Clock it. Start building. Launch pipeline. Deploy infrastructure. Oh my. What is this little thing that's just making this thing sound so-- these two things are just making this thing sound so intriguing. You know what I'm saying? It's just making it sound like some normal BS.
+
+And you see, like, these are the things that just make your stuff stand out. See this one. End to end scaffolding, continuous deployment, and code base evaluation driven by structure. Bruh. You change the scaffold, deploy, and evolve your code base fully automated by-- that is clean. This is clean. This is clean. This is actually clean.
+
+So if you actually come back to this presentation that I cooked up for you guys, we've done the marketing SEO. So a beautiful site is just less if Google can't find it or if the copy doesn't convert. So that's why we use the copywriting skill to get a copy that makes a lot of sense. So this is a SaaS product for managing your task efficiently. Change to stop wasting tokens. Build a 50 plus skill AI operating system in second. Absolutely beautiful.
+
+And you know the crazy thing. I told you guys at the beginning of this video, this project was actually made using a skill. This whole video you're watching, right? I planned the whole thing using a skill. So that's really, really important. I had my whole workflow for making use of video. Just like, you know what? Let's donate the workflow into a skill. And here we are today.
+
+But that aside, let's just look at the skill that we actually told Gemini to make the last time. OK, here's the complete standard structure directory. So this is the skill that we made. So I'll show you how to create the skills. I actually did the proper breakdown, how the skills are going to be created. And yeah, the agent log-- get ready, MPX Vibesuits in it, or MPX Vibesuits in store, whichever one it is. And get ready, 50 plus skills into one brain.

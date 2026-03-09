@@ -1,0 +1,1514 @@
+[00:00:00:00 - 00:00:03:37]
+ Record stuff later, I'll do that.
+
+[00:00:10:02 - 00:00:14:33]
+ Alright, don't download ESQs, build them instead.
+
+[00:00:16:30 - 00:00:51:30]
+ Everyone is downloading random ESQs, I'm hoping that it won't. I've seen this a lot with a bunch of my friends, they just hop on to probably SKUs.sh and then they search for random stuff, they download them. It's the main issue, I'm not good at criticizing anybody because I actually did that at the point. But instead of doing that, I actually sat down after some time and actually made custom SKUs based on things I'm doing at the time to ensure that I can custom refine them and make sure that they actually work to the best of my needs. Instead of just randomly picking what somebody else uses in their own workflow.
+
+[00:00:53:09 - 00:01:25:00]
+ Now, when you open up anti-gravity, when you pick up anti-gravity for the first time, it's blank. You have no context files, no coding standards, no design systems, no security checks, all you have is absolutely meat. It's good enough for most users and to be honest with you, you're probably fine. But if you really want to step out of that cage and move to the 1% of those that release anti-gravity to the fullest, you have to use custom SKUs and workflows.
+
+[00:01:27:16 - 00:01:31:56]
+ The AI can do everything you want, you just haven't told it how to do it.
+
+[00:01:34:27 - 00:01:55:10]
+ So that's why for the past 6 months, I've spent so much time building over 64 custom SKUs and 26 workflows. What does these SKUs and workflows do? They make these automatic. The SKUs are auto-activated based on the current task, so you don't have to think about it. The AI decides what SKUs to use.
+
+[00:01:56:25 - 00:02:17:19]
+ Course SKUs like security, design, SEO and code reviews, you don't have to download one SKU and pray that it actually works. You're sure that what you're getting from this tutorial is going to work and it's going to be very, very easy. And the installation is going to be extremely simple and everything is going to work so well. So let me guide you to everything.
+
+[00:02:22:23 - 00:02:28:19]
+ The links to everything is going to be in the description, so you can just go there. So you just go to open the GitHub, right?
+
+[00:02:39:51 - 00:02:45:49]
+ The links to everything you need to be in the description. But basically, you're going to go to this GitHub link here, right?
+
+[00:02:46:50 - 00:02:53:08]
+ And you're just going to come down here and you're just going to click on "MPX Vibe Suit Install".
+
+[00:02:54:09 - 00:03:32:10]
+ So, Tijim, I actually need before now, you probably need nodes to be installed in your system, in case you didn't already have that. But just install it, download one for your PC system and you're good to go. Once you have that installed, you just open up your terminal. Just open up your terminal and you're just going to write "MPX Vibe Suit Install". I personally use PMPM, which is another package manager, so that's what I'm just going to use. But this installation process is the exact same. You're just going to write "PMPM Vibe Suit Install" like this. And you're going to run and you're going to notice that it's going to give you something like this. And down here, this is where most of the work actually is going to happen.
+
+[00:03:33:16 - 00:03:34:43]
+ Now, let me quickly delete it.
+
+[00:04:18:10 - 00:05:07:08]
+ I have these ones installed because this are actually part of the core tools are used But we're just good to focus on anti-gravity here So you just get to press spacebar to deactivate them and press enter like this So what you're going to choose you get to choose skills and workflows that already preactivated before you can see there 64 skills are available And about 26 workflows. You just get to enter like this now You have the choice to actually just install the core skills the core skills include the as decay code review Some next-gen standards and some other things that are actually very very important or you can install all 64 Which is all we're going to use today Then you have the same tier you can choose either the essential workflows or all the workflows or you can choose all excluding Legacy, so they just choose all excluding legacy, right?
+
+[00:05:08:34 - 00:06:02:11]
+ Now all these skills are good to install to your system and you're ready to go. How do you know that is all installed? You're good to open up your anti-gravity at the top of them open She's gonna be back and you got to like this and you go to come to if you don't see this open already Just press ctrl L alright press ctrl L or click on this icon at the top here Just click on this now and you come here and click on advanced customization You come to workflows and you should see all of them populated here If you don't see them populated You Should see them populated So what you're good to do now is you can come back to this place and you can just do forward slash like this And you can write code for example, you see them here You can write vibe you can do forward slash vibe everything should be there and you should be good to go You can do for slide a is decay
+
+[00:06:03:13 - 00:06:06:13]
+ Everything is there. So you just know that everything is installed
+
+[00:06:14:14 - 00:08:00:15]
+ You Now for today's project we're actually going to be doing We're going to be building a project from scratch for this project We're going to be building a website a very very beautiful website and already taking my time to actually generate the plan for the website Here, so this is the plan for the website. It's a premium. Let me see if I can make it so you can see it easily So it's going to be a premium website that has a premium dark mode SARS landing page with vibe coding protocol suits Basically, I'm making a website to showcase all these tools that we have and that's basically it So what we're gonna do here normally is I would normally switch to opus 4.6 because I find this to be one of the best for planning and I'll do my forward slash here and I'll write a case treat or like this modal castrato and I'm going to just tell it my plan. So for this particular situation here We're just gonna drag and drop this file into this because that's what you do So I'm to gravity can just drag and drop that into here like this But if you don't have something written out like this You can just write it out and plan everything out and then just the bonus for you guys that here in case if you actually Don't have any you have an idea, but you haven't really thought about how to plan it properly It's not using more okay straight or like this. I created a new mode recently I actually use and the mood is called vision. Yeah, so vision like this, right? More visionary and this mode is actually good to handle the planet and everything you need But of course I've already done that we can just do more like this and then We're going to drag and drop this plant here like this. Good. Now. We're good to tell the agent I Want you to use all the skills you have to? properly
+
+[00:08:02:11 - 00:08:08:15]
+ Plan this out adequately, right now
+
+[00:08:10:50 - 00:08:16:53]
+ Note that I don't want any cliche designs
+
+[00:08:17:55 - 00:08:19:45]
+ like the classic
+
+[00:08:21:57 - 00:08:22:39]
+ Yeah
+
+[00:08:24:07 - 00:08:24:45]
+ Styles
+
+[00:08:26:09 - 00:08:48:27]
+ Now do you leave is where I'm adding this is because When I was making the plan actually didn't take my time to review the plan and I just saw that is asking for this premium Dark mode sauce London and that's basically our all he has with his design I don't want I want something much more unique then lastly you're going to end this and you're going to write Vibe code in it. Yes, I'm gonna try it vibe
+
+[00:08:53:58 - 00:08:55:45]
+ I
+
+[00:08:58:12 - 00:09:21:21]
+ Last year just go to write Genesis here so you're going to go with vibe Genesis the first one, right? So the AI is going to run all these workflows on all these things now And they just hit send and you'd see that the AI is going to take its time It's going to start reading files good start organizing things a good start really figuring out where things are meant to be in this project So let's just keep a second
+
+[00:09:22:57 - 00:09:49:43]
+ So you guys see it's reading the plan it has already picked up two skills guys He two skills you have been activated the first skill has been activated here is the front-end design skill nice The next skill that has been activated here is the UI UX promax skill So you don't have to think about it the AI is just going to end up doing everything It has to do to make sure that gives you the best results So
+
+[00:09:51:03 - 00:10:03:46]
+ It's good to analyze the project requirements generates the project requirement documents and github issues Scuffle the project structure and injects the coding guidelines all in one shot for you to start building
+
+[00:10:14:21 - 00:10:26:56]
+ Let's just give that moment actually finish Using everything you can see that it's going through it is there is in the design system using the UI UX promax see Something's just go created here. Can you see this?
+
+[00:10:28:00 - 00:10:38:49]
+ She's looking at the color palette that has created. Yeah, some pages here that is trying to generate You
+
+[00:10:39:53 - 00:10:54:56]
+ Can see that it's telling is that oh do not do this do not do that So all this at least that you yourself would take so much time to build but the air is ready The workflows are skills already put this into the air giving it that extra torch
+
+[00:15:17:38 - 00:15:39:52]
+ So Okay, so the agents is done and it has actually written a bunch of files for us and that's giving us this overview Disimplementation plant that's told us that this is what the plan is. It is important to know that it does don't the anti-slope design
+
+[00:15:41:26 - 00:16:53:08]
+ Stitch integration the beautiful measures in a stitch skill for initial design changes teachers produce a bar bar bar I recommend you skip skid for this build bar bar bar bar So you can see that the AI is actually actively thinking about this whole thing step by step I see that's brought out this whole plan here Applying in what each section of this website to be Okay, use this use that and all this stuff now the best part is that you just have to go through this very roughly To understand kind of the vibe of how things are going to go, right? And you can see that as we said, okay These are the modes that are going to be used for the rest of the build all these things are here Step-by-step all these things are here So now the next step now is so you see it tells us here that okay I threw out Baba Baba Bla Bla this this this this this Okay, so how deep the actual options beauty every remote component food demo plus 20 minutes Animate it as we do so down Baba Baba, so I'm going to say that let's do option a Right, I'm just gonna say, okay, I agree
+
+[00:16:55:07 - 00:16:57:56]
+ Let's do option
+
+[00:16:59:33 - 00:17:07:37]
+ Option a for the remotion stuff now Normally, I would actually open a new tab, right?
+
+[00:17:08:57 - 00:17:56:05]
+ Okay for emotional stuff updates the plan I'm just gonna say update the plan and Get back to me You just do this because you know this kind of project this project is Specifically crafted to show you guys all that can be done in one shot, right? Normally is not meant to be this like in depth like this You're good to get a lot of details like this But all the tears I'm trying to do and trying to add so many excuse altogether Normally you just be using one two, three four five of them Throughout the course of the project or over the course of like a couple of weeks or months as depending on how big the project is You might end up touching maybe 10 20 of them Do you understand but try to see how many I can demo to show you guys how powerful the skills actually are?
+
+[00:18:43:38 - 00:18:53:34]
+ Okay, so the agent is actually done and everything is looking good Everything is looking good
+
+[00:19:02:23 - 00:19:57:15]
+ So now what we're going to do here now is we're going to do more okay straight away again, right? Because remember like I said, this task was extremely big So just add it one more time and say more of the streets are we're going to say please now make all the tasks tasks files Not to write this make all the tasks files The reason why you're doing is because the agent really spent so much time crafting in point of things and this is some of the Disadvantages of two of the present states of the vibe coding world as it is right now Sometimes you need to know the things you're doing so you can not just the agent it's the right path, right? So you guys see now it's like oh yeah I remember that now genocide because the other time we focused on modern things that were also very very important But if we got some of these fundamental tears like for example see that's clearly a task folder and has created this orchestrator session I even see that
+
+[00:20:04:17 - 00:20:04:19]
+ I
+
+[00:20:06:27 - 00:20:08:45]
+ Could I just finish a switch to
+
+[00:20:33:20 - 00:20:43:50]
+ You
+
+[00:20:45:56 - 00:20:50:51]
+ She's creating the master plan it's great in the task scaffold
+
+[00:20:53:17 - 00:21:14:04]
+ Yep That's design So this is where it's been seen. I see that if you open the task is telling it's all okay This is what's gonna happen here. You're going to look at this you're going to look at that You're gonna look at all these different parts of this whole thing Are you getting it so like it's taking every single team beats by beats?
+
+[00:21:15:11 - 00:21:27:49]
+ There's seven tasks in total so it's going through this is the first three and the next one Starts Bob, okay, it's actually looking really nice so far
+
+[00:21:33:33 - 00:21:33:57]
+ Oh
+
+[00:21:35:13 - 00:21:47:52]
+ The agent should use this skill and this skill like I said It's invocable by the agent agents can invoke in these key the fuse like invoking as far as the fuse lies needed for that particular task Okay
+
+[00:21:48:54 - 00:21:51:45]
+ That's seven is Wow 7c
+
+[00:21:52:46 - 00:21:55:56]
+ As interested this is gonna be very interesting viewed
+
+[00:22:28:20 - 00:22:28:50]
+ Interesting
+
+[00:22:31:37 - 00:22:32:08]
+ Interesting
+
+[00:22:33:27 - 00:22:44:10]
+ What I'm realizing now is that there's a high chance right that this website actually be the website So guide you through this to the shop results of this whole workflow thingy interesting
+
+[00:22:45:32 - 00:22:49:24]
+ This is been truly letting the agents do whatever I want to do at this point
+
+[00:23:15:52 - 00:23:18:46]
+ Okay Okay, so the agents is done so
+
+[00:23:20:34 - 00:23:21:08]
+ Okay
+
+[00:23:22:11 - 00:23:36:04]
+ Interesting this is actually really really dope. This is really really dope So what we're going to do now is we're going to create a new seat that is already giving us a prompt that we can Give to the agent. We can just copy this prompt like this, right?
+
+[00:23:37:21 - 00:23:46:39]
+ We'll copy this prompt like this Contracy, right? But before we do that, let's do one more thing. We're going to come here and we're just going to say design
+
+[00:23:47:49 - 00:24:05:11]
+ Five design like this. We're just going to hit enter and So now what the agent is going to do is that it's going to go through everything and It's going to actually create mock-ups for us that we can actually visualize
+
+[00:24:09:25 - 00:24:58:30]
+ Sure we can have a taste of what the project might end up being like See it's really not the files you need to design it's MD Region product requirement document now wanting you to notice that depending on the project Actually using or you're going to create right? You might not create all these files like this in this exact same order, right? But it's get you really really close and you see that you'll be some constant formats And my advice for you is that if you don't tell you to install all these skills on your system All these take the time to read the skills, right? Let's take the time to read them so you understand how they work I say you understand how you can even fine-tune them to better work for you
+
+[00:26:04:19 - 00:26:31:25]
+ You Okay, see the submitted a design system for us on a site map I see the site map the site map is going to list All the different parts of the website are going to exist and then you have a design system Let me show you what design system looks like everything a file explorer unless double click on this I hope this looks beautiful. Please do all my help from the file. I'll go and what is happening? Oh My god
+
+[00:27:22:08 - 00:27:51:04]
+ Oh Yup exactly perfecto so you can see see how beautiful this looks Look at how beautiful this looks look at font the font is beautiful Look at how this looks all the buttons look great You can see what it looks like And this my friends is why you need to follow the protocol step by step It's not that complex
+
+[00:28:38:40 - 00:28:38:41]
+ Okay, so that's gonna head I'm actually meet the lighting pitch for us let's check what I was like
+
+[00:28:41:41 - 00:29:21:08]
+ Okay, good at the speed of thought This is not a bad start at all This is actually a bad start at all Amendment I may maybe not be a fan of how this place looks right because it's a bit too fast but Every like one you cannot you know, I'm actually end up linking this video to be to watch their most section Now I can be really cool Yup, looking good looking good looking good
+
+[00:29:22:23 - 00:29:41:11]
+ Okay, so now we can fix that prompt that that guy give us our time. I would just gonna come here I was going to close this all right mode code like this Mm-hmm execute the task this this this is this is full of the agent set up instructions exactly He's wrong
+
+[00:29:46:16 - 00:29:56:58]
+ Let's go so now let's just watch the agent actually cook this up in seconds then push this to be hope so that you guys can let up come together and
+
+[00:29:58:29 - 00:30:20:58]
+ Just like I don't know Review the code yourself and look at the project if you want to also link this in the description So the agent is going to go through now and actually scaffold this whole thing You would see that in this whole project see that started reading different skills looking at the next year standards To look at the proper way to use next year's but not here
+
+[00:30:22:09 - 00:30:22:46]
+ Okay
+
+[00:30:27:00 - 00:30:39:34]
+ You
+
+[00:30:44:03 - 00:31:00:40]
+ Okay, see it is reading it is reading what vibe Genesis is beautiful So it's really the workflows is reading all the workflows by itself sky see There's not just the skills that I can read on his own. They can read the workflows too So you yourself don't have to prime the workflows
+
+[00:31:01:57 - 00:31:07:26]
+ And then it's going to read all the files that I need actually go on beauty state for us
+
+[00:31:09:07 - 00:31:11:21]
+ See see what I've shown you now is
+
+[00:31:16:02 - 00:32:53:43]
+ We've already done the design Genesis at this point vibe Genesis, so let's just run this What is it click? I'm actually going to reject this and I'm going to tell it to use PnPn just because that's why I like using so you to reject this and obviously use PM Yeah, I use PM PM because PM PM already downloaded packages of my system And I don't have to like we download them exactly at least faster It's right because I'm in ITR my nets what is it on it? Am I in it's okay? I need that it's really terrible. So Anything that saves me time I'm down so you just fix that Funny enough in another folder if you see I've been checking I'm actually Presently running another project which is actually an alternative to this workflow So for example now if I run this I could come to let's see here Like oh Wow, this is actually a very great project and I really love what's happening so far. It's possible Can you make sure that everything that we view today get saved to the internet? I'm just make sure you tell these people that are watching this video to please hit that like button and subscribe To get more interesting videos like this hit stop I was gonna transcribe and it should be used yep exactly so Yep, this is a new project. I'm walking on. I really love what's happening. Oh Yeah, so let's hit run
+
+[00:32:57:30 - 00:33:06:02]
+ Let's see You know, and it's it's working really well it's going
+
+[00:34:20:56 - 00:34:20:58]
+ I
+
+[00:34:24:10 - 00:34:39:34]
+ Want to approve this Because it's in his home this stuff is it actually magic like you still have to wait a bit for this test I actually write good. That's okay, dude. It's not you just good copy stuff of the data that passes though I
+
+[00:34:41:05 - 00:34:51:38]
+ Still have to write it good Just write it good Anyway shop better than you writing it yourself
+
+[00:37:14:29 - 00:37:15:33]
+ I Was crazy
+
+[00:38:40:13 - 00:38:41:35]
+ I
+
+[00:38:45:34 - 00:38:49:04]
+ Was running tests to show that it didn't miss anything
+
+[00:38:50:39 - 00:38:55:07]
+ Good no error so far
+
+[00:39:00:05 - 00:39:01:13]
+ Making progress
+
+[00:39:42:50 - 00:39:43:05]
+ I
+
+[00:39:45:46 - 00:39:48:10]
+ Seems like task one is complete
+
+[00:40:18:16 - 00:40:18:18]
+ I
+
+[00:40:23:05 - 00:40:37:02]
+ Says task one is complete. It gives you a full breakdown of what has been done and everything's fine You're just gonna create a new chart chart again on this writer The reason why I'm creating new charts is because you need to make sure that's It's a cute
+
+[00:40:39:18 - 00:41:04:05]
+ Executes The reason why you're creating new charts for every single task is because you don't want a situation where you Over crowd a single charts context over crowding the context is going to lead to bloating and the agent's nobody has Effective as is meant to do so if you have a very good rule of thumb is every single
+
+[00:41:05:11 - 00:41:27:01]
+ Appression you're doing like every single specific task has a specific chance Do you know that by the time you're doing multiple teams in a particular chance? That's the that's the key to tell you that? Oh Multiple features move some of that chance. What if you just move on a chance? That's a very very good rule of thumb So let's just commit all this
+
+[00:49:21:46 - 00:49:24:53]
+ Oh Let's test I see
+
+[00:49:48:15 - 00:49:52:14]
+ You Okay, let's move to the next task
+
+[00:55:31:10 - 00:55:51:20]
+ You
+
+[00:55:57:41 - 00:55:57:45]
+ Okay
+
+[00:55:59:14 - 00:56:01:41]
+ You might be getting something like
+
+[00:56:30:54 - 00:56:32:13]
+ Oh
+
+[00:57:43:24 - 00:57:47:02]
+ You
+
+[00:57:50:17 - 00:57:51:03]
+ Okay
+
+[00:57:59:14 - 00:58:07:41]
+ Oh Okay
+
+[00:59:59:13 - 01:00:42:02]
+ You So now as you can see we're actually invoking a couple of skills here, right? Here we have the copywriting skill front-end design and next year standards So why are we using all that because this particular task here right is to create? the stats bar implement horizontal layout displays for metrics does
+
+[01:00:44:01 - 01:03:09:19]
+ 64 skills to 86 workflows one command in store 100% free So use frame out much as all these things are there right and it's getting all this is context This is this this is that the other yada yada yada. Do you understand? So the agent has read that is that okay. This is how to write proper copy, right? This is how to put back copy so that whatever is writing is not just nonsense Do you get so yeah, that's how the agents are actually using all the skill You kind of using these skills if you're writing like YouTube video, you're actually preparing a bunch of stuff funny enough This video that you're presently watching right was scripted right inside anti-gravity from scratch Let me show you what it looks like This is the video that you're watching right now From the very beginning all the breakdown of all the content You see all the channels is telling me to check out all these different breakdowns. Oh, this is the video This is these these are some key insights if I screw it on to very top here You can see this is me telling it's what I feel like I run the YouTube pipeline Then he went he read some bunch of starts it came back and we're just going back and forth We said okay get this for me. I got it to give me this prompt I put it in a I studio I got this key results back went back and forth on to the points where you find out roots Descripts that you're presently watching right now and even after then writing the script I didn't pass it in to manos to give me this beautiful pop when presentation after you like so you see It's just like really into a weave together and I wouldn't be showing you something that I don't use myself You know sounds and so yeah, man Let's see what happens here now. Let's refresh this Okay, I Scroll down just a tiny little bit. I'll see what happens Hmm I want to see how many fun of this as you can see did this styling didn't pop up properly But let's see what was gonna happen That's the sometimes things like this happen and then years of this out to be told agent like you You kind of mess this up. Just let it show So we're just going to get ready to take a screenshot and be like okay, so let's take the screenshots now Just tell the agents
+
+[01:03:14:45 - 01:03:39:23]
+ Okay Okay Then I just cue that I'm just gonna say I was going to send it and it's gonna fix it So it shouldn't be that hard to fix probably just gonna be like a single line of till we need to correct that mistake Nothing too crazy
+
+[01:03:44:47 - 01:03:47:14]
+ Working with non-deterministic machines here
+
+[01:04:46:48 - 01:05:02:53]
+ I Knew was just a single line. I knew it
+
+[01:05:04:28 - 01:05:06:44]
+ Let's see boom
+
+[01:05:09:05 - 01:05:27:32]
+ I like the way the the 100 takes a moment before he finally finishes counting Done because we go to next house over to the next house To be honest you
+
+[01:05:29:39 - 01:05:30:37]
+ Let's see
+
+[01:05:38:08 - 01:05:50:04]
+ The next task I want to be to the other gravity gonna be running what I want to know the same time Well, usually just let it finish cooking, huh? You edited more code wondering why
+
+[01:05:51:27 - 01:05:58:05]
+ I really want you my idea. It's more good. Maybe you made some extra changes to find change
+
+[01:06:10:04 - 01:06:10:05]
+ I
+
+[01:06:38:05 - 01:06:40:05]
+ I
+
+[01:12:08:06 - 01:12:16:22]
+ I
+
+[01:12:20:55 - 01:12:37:20]
+ Can see at this point the agent actually made an error here, right? Well because it checks it found the error and he fixed it See so itself corrected itself Always little it is Just ensure that you don't ship slope
+
+[01:13:32:28 - 01:13:33:37]
+ you Look at next task What is this task
+
+[01:13:38:06 - 01:13:38:06]
+ You
+
+[01:13:47:49 - 01:13:50:28]
+ Wow, this crazy
+
+[01:14:03:34 - 01:14:03:47]
+ Interesting
+
+[01:14:08:06 - 01:14:10:06]
+ You
+
+[01:17:38:06 - 01:17:40:06]
+ You
+
+[01:18:38:06 - 01:18:40:06]
+ You
+
+[01:25:38:06 - 01:25:40:06]
+ You
+
+[01:26:38:06 - 01:26:40:06]
+ You
+
+[01:27:38:06 - 01:27:40:06]
+ You
+
+[01:29:08:06 - 01:29:10:06]
+ You
+
+[01:29:38:06 - 01:29:40:06]
+ You
+
+[01:30:08:06 - 01:30:10:06]
+ You
+
+[01:30:38:06 - 01:30:40:06]
+ You
+
+[01:31:08:06 - 01:31:10:06]
+ You
+
+[01:31:59:08 - 01:32:02:22]
+ You Oh Something I did
+
+[01:32:04:30 - 01:32:06:03]
+ Is in charge of those
+
+[01:32:25:35 - 01:32:31:11]
+ You Okay
+
+[01:32:38:19 - 01:32:40:53]
+ Long down
+
+[01:33:08:06 - 01:33:10:06]
+ You
+
+[01:33:38:06 - 01:33:40:06]
+ You
+
+[01:34:17:23 - 01:34:20:55]
+ You Okay, reply to me
+
+[01:34:38:06 - 01:34:40:06]
+ You
+
+[01:35:08:06 - 01:35:10:06]
+ You
+
+[01:35:38:39 - 01:35:40:06]
+ You
+
+[01:36:10:13 - 01:36:10:14]
+ You
+
+[01:36:15:06 - 01:36:18:21]
+ But I don't know it's not the guy that's fixing it out problem
+
+[01:36:20:56 - 01:37:14:58]
+ Yeah, yes technically the project is actually done the If it was a wood to scaffold, you know that the idea the front end design thing, you know So if he was able to hook up the back end He was still asking for some other features and it by turning that she just leave it in under the people that are Asking for the product. They don't know what's happening. So let them just use it and enjoy the way it is I still have those projects. I said that we are going to work on I've not just put it all together to put out the proper structure If possible self if you actually do that today, maybe you will just sit down and would actually work on One of those projects together have good internet now So whatever time that you you're ready, just let me know I would actually do proper work today Not just down on that. It's almost not working one thing. What's in it? My little gets working down. So
+
+[01:37:16:30 - 01:37:26:13]
+ I'm actually thinking and come try and see how we can best balance this whole thing out you get how much of guys out of my glasses
+
+[01:37:27:32 - 01:37:28:04]
+ lies
+
+[01:37:29:30 - 01:37:30:16]
+ Liar
+
+[01:37:31:53 - 01:37:46:50]
+ Hey, so I'll try to see how we can Actually sort out this whole thing and balance it out thousand times of how we can share projects if you should work on the same projects or We should split it. I don't know how we should properly do it
+
+[01:37:53:49 - 01:37:54:32]
+ And
+
+[01:38:00:48 - 01:38:15:03]
+ I think I saw like one What I said, I'm telling you what I'm telling you what I remember now. It's only like one I saw upstairs
+
+[01:38:16:49 - 01:38:20:28]
+ It's only one I saw
+
+[01:38:22:17 - 01:38:25:51]
+ One that was left
+
+[01:38:29:08 - 01:38:45:52]
+ I Don't know what three I Don't know we didn't count it like that. Do we counted it? We counted all of them as one gun Do you understand because it's actually all still one gun. They that we separated
+
+[01:38:59:45 - 01:38:59:58]
+ So
+
+[01:39:03:22 - 01:39:07:31]
+ Okay, what so kids
+
+[01:39:13:03 - 01:39:14:44]
+ Yeah, pass my glasses up
+
+[01:39:29:08 - 01:39:31:08]
+ I
+
+[01:40:29:08 - 01:40:31:08]
+ I
+
+[01:42:59:08 - 01:43:01:08]
+ I
+
+[01:44:29:08 - 01:44:31:08]
+ I
+
+[01:44:59:08 - 01:45:01:08]
+ I
+
+[01:45:26:09 - 01:45:26:10]
+ I
+
+[01:45:28:34 - 01:45:29:08]
+ Awards
+
+[01:45:34:24 - 01:45:36:53]
+ Oh Cha-cha
+
+[01:45:39:27 - 01:45:53:01]
+ Which white one I Don't know you're talking about I Said I don't know you're talking about I don't know where it is
+
+[01:46:01:09 - 01:46:03:51]
+ You get to me you said for it always I
+
+[01:46:05:51 - 01:46:11:02]
+ Don't know just go on search go home. I look for eats ah
+
+[01:46:13:53 - 01:46:20:38]
+ No, I didn't park it's I don't know
+
+[01:46:24:08 - 01:46:24:57]
+ I'm thinking dinner
+
+[01:46:34:53 - 01:46:38:57]
+ I Okay, no, I don't know guy
+
+[01:46:43:39 - 01:46:47:46]
+ Of you guys are just talking my life. Yeah, I'm recording something ah
+
+[01:46:48:56 - 01:46:51:33]
+ I don't just leave somebody alone mostly stop
+
+[01:46:54:53 - 01:46:59:30]
+ I don't know wait cheese. Oh, sorry. I don't know it
+
+[01:48:17:23 - 01:48:18:25]
+ I Don't know
+
+[01:48:29:37 - 01:48:29:47]
+ I Small
+
+[01:48:34:22 - 01:48:34:53]
+ Okay
+
+[01:48:37:20 - 01:48:56:14]
+ Like in total close the wound I set up this okay, you can't take five that's Okay, I'll check how many that's how many did they buy The toilets
+
+[01:50:00:45 - 01:50:02:30]
+ You Did I did you on something
+
+[01:52:31:37 - 01:52:33:23]
+ You Is not working
+
+[01:52:35:49 - 01:52:56:10]
+ All right, so now we are moving to task seven right top seven is the one in charge of Remotion of skills walk into is the remotion skill. So I have in some issues Yeah, these guys just messed up something
+
+[01:53:12:17 - 01:53:14:17]
+ I
+
+[01:55:56:09 - 01:56:02:43]
+ (Inaudible) The internet is blinking red. The internet is what? It's blinking red.
+
+[01:56:04:37 - 01:56:09:49]
+ I don't understand. They said it's not them. So I have to call the office now.
+
+[01:56:12:17 - 01:56:15:37]
+ (Inaudible)
+
+[01:56:21:47 - 01:56:25:08]
+ Alright, so the task we want to run now is the remotion scale, right?
+
+[01:56:26:15 - 01:56:45:37]
+ What is remotion? Remotion is just for making animations, like really, really dope animations. Let me show you some examples of some of the remotion projects I've done recently. And I didn't write any, I didn't actually make any of the videos. All the videos were made straight with the AI. Let me show you some of them.
+
+[01:56:49:34 - 01:56:58:09]
+ See, I have it bunched. You know what? Let me just, let me just go through all of them. Because like, why not? We are all here today. Let's just go through all of them. Let's see.
+
+[01:57:09:17 - 01:57:11:56]
+ Okay.
+
+[01:57:17:00 - 01:57:21:30]
+ You see some good, some bad, some ugly ones. All of them will be here. You just look at them.
+
+[01:57:24:34 - 01:57:25:07]
+ Okay.
+
+[01:57:28:55 - 01:57:29:26]
+ See this one?
+
+[01:57:30:57 - 01:57:34:50]
+ All this was done with the AI. All this was done with the AI.
+
+[01:57:36:28 - 01:57:36:58]
+ Not me.
+
+[01:57:38:19 - 01:57:40:35]
+ Okay, see. This is another one.
+
+[01:57:43:22 - 01:57:55:58]
+ Beautiful animations. This is another one. I just want you to show it. I think this was the first pass. This is actually the first version of it, right? Then, I wasn't really satisfied with this first version, so I went for a second version.
+
+[01:58:00:43 - 01:58:01:44]
+ Let's skip through this.
+
+[01:58:03:44 - 01:58:09:17]
+ Let's skip through this one. Then this is, this is another one. This is another version of that same project.
+
+[01:58:10:17 - 01:58:15:55]
+ It was getting a bit better, but I still wasn't a fan of it, per se. Then, another iteration.
+
+[01:58:19:04 - 01:58:24:16]
+ See, you see like, ReMotion is like, crazily powerful. It's crazily powerful.
+
+[01:58:25:29 - 01:58:38:39]
+ This one is blank. Okay. Ah, I remember this one. This one was really dope. Yeah. This was found in that video where I was talking about UI, UX, Pro Max skills, workflows, and workflows. You can see the animations coming in so cleanly, guys.
+
+[01:58:40:39 - 01:58:52:28]
+ All written by AI code. So, let's just see what the AI is meant to write this time around. Because, like I said, I'm not even going to look at this project. I'm just, as well, doing it while looking at it, life on direct. Not me.
+
+[01:58:54:09 - 01:59:00:56]
+ Because everything is going one by one. Beautiful. One of my best performing videos. I love these animations, man.
+
+[01:59:02:17 - 01:59:09:07]
+ These animations, you know, so. Now, basically, they're just meant to cook and then we get back to it.
+
+[02:01:34:56 - 02:01:38:47]
+ (Blank Audio)
+
+[02:01:41:19 - 02:01:55:28]
+ (Blank Audio)
+
+[02:01:57:49 - 02:01:59:28]
+ What's going on? Ugh.
+
+[02:02:00:44 - 02:02:05:28]
+ (Blank Audio)
+
+[02:02:11:19 - 02:02:37:55]
+ (Blank Audio)
+
+[02:02:41:17 - 02:03:14:21]
+ (Blank Audio) (Blank Audio) Oh, shut down. It is a very significant moment, not only because, you know, the modern F-15.
+
+[02:03:15:21 - 02:03:53:41]
+ Oh, since we last spoke, so much has developed in the Iran war from US casualties to American jets being shot down by accident. And also, now let's talk about this whole Jim Carrey situation because this has been a roller coaster, you know, as if we didn't have enough trust issues with the world, with AI, with mistrust of the media. Turns out this video might have never been Jim Carrey. Let me explain. So as you have probably seen by now, over the past few days, there's been this viral moment and it's caused chaos online. No, this Jim is speaking to the press.
+
+[02:15:48:50 - 02:16:00:03]
+ (Blank Audio)
+
+[02:16:03:28 - 02:16:41:53]
+ All right, so now the second task, this is 07B, right, tax 7B, a remote on task. So this one actually goes forward and it makes it's in one typewriter effect, spring animation, right, on distinct geometric skill shapes, right. Then it's staggered appearance of code blocks with UI bars and slick browser mock-up sliding. Honestly, it's what makes it, I really want to see how this gets implemented. I pretty good to implement it properly. I really pray those, fingers crossed, I pray those, but let's see how things go.
+
+[02:16:42:57 - 02:17:13:57]
+ Yeah, because why is it in Gemini here? The last time I used Gemini for this, Gemini was a bit too lazy to actually do this. So I ended up creating a remote build workflow that actually does this. But to my knowledge, throughout this whole process here, right, the remote build, what's it called, workflow wasn't implemented. So let's just see how things go actually. If it doesn't turn out well, I'll just go back and start it again using the remote build workflow and see how things go.
+
+[02:17:15:32 - 02:17:44:40]
+ Okay. (Blank Audio)
+
+[02:33:45:02 - 02:33:55:52]
+ All right, so the agent is actually done with our emotion task, right? So let's quickly check what it is and I'm going to run the emotion scale now, let's see what happens. There's some errors here.
+
+[02:33:56:53 - 02:34:08:02]
+ I will tell the agents actually fix these errors now, but let's just go and see what really happens. So we've opened this up, we have no assets, all right, let's just hit run.
+
+[02:34:10:14 - 02:34:18:19]
+ Okay. (Blank Audio) Hmm, guys see that bouncing animation. Guy Gemini 3.1 is actually killing this guy.
+
+[02:34:19:30 - 02:34:21:37]
+ Ooh, yes sir.
+
+[02:34:23:01 - 02:34:28:35]
+ Yes sir. Okay, this is actually bravo. (Blank Audio) Bravo.
+
+[02:34:29:40 - 02:35:13:57]
+ (Laugh) He actually did a way better job, right, than 3.0 would have, I'm really, really impressed. I don't have any changes. I really don't have any changes. Let's look at what he actually was meant to build. So, three seconds, text prompt appears with type of effects. Three skills icons found out with remotions, spring animations, code blocks materialized block by block. A browser mock up slides in, exactly what it did. (Sound) Exactly what it did. So you see the prompt, PMP, uh-huh, MPX in it. So 34, UIX design, deployment, back end, okay, okay, okay.
+
+[02:35:15:13 - 02:35:23:34]
+ This, my friends, is ras sensational. (Laugh) I actually like the new version of remotion. It's looking good. And I can, oh, this is obviously a bit of a self.
+
+[02:35:25:31 - 02:35:30:46]
+ That's cool, guys, it's actually really cool. And you can just hit this to render, and then it renders the whole thing.
+
+[02:35:31:50 - 02:35:39:45]
+ So let's just see what's next. This is beautiful. There's no, there's not supposed to do reading. But let's see, let's see.
+
+[02:36:05:50 - 02:36:17:03]
+ Okay, so let's upgrade this task, right? And let's move to the next task.
+
+[02:36:18:19 - 02:36:20:40]
+ I'm making progress, guys, I'm making progress.
+
+[02:36:23:11 - 02:36:37:22]
+ Okay, now I'm going to task C. Now the O7 task C, right? I think, it's definitely, it's definitely O7C. Let me see. Pending, yeah, there is O7C, beautiful.
+
+[02:36:38:29 - 02:36:44:26]
+ Let's go, let's run that, let's see what goes on here. (Inaudible)
+
+[02:36:45:31 - 02:36:48:04]
+ Wait, what? What's happening? (Laugh)
+
+[02:36:49:38 - 02:36:50:46]
+ What's happening here?
+
+[02:36:53:12 - 02:36:54:42]
+ My god, what is happening?
+
+[02:36:57:37 - 02:37:12:25]
+ (Blank Audio) Huh, interesting. Something went wrong with this. Oh, it put node models inside here. Oh, that was my bot, that was my bot, my bot, my bot, it's,
+
+[02:37:13:41 - 02:37:36:05]
+ that was my bot. I run the command from, what was that, the zlscd, your player's running from here. My bot rookie mistake, oopsie. (Laugh)
+
+[02:37:37:14 - 02:37:40:00]
+ Yep, let me see.
+
+[02:37:41:46 - 02:37:44:28]
+ Yeah, let's, let's undo this one.
+
+[02:37:46:27 - 02:37:48:39]
+ Undo this, discard.
+
+[02:37:52:03 - 02:37:53:26]
+ (Blank Audio) This should have been here.
+
+[02:37:55:57 - 02:38:03:46]
+ (Blank Audio) Yeah, that's fine. Okay, everything looks to be updated now. (Blank Audio) Yep, everything is updated.
+
+[02:38:05:53 - 02:38:09:10]
+ (Blank Audio) Let's wait for the next task to run.
+
+[02:38:12:46 - 02:38:13:27]
+ (Blank Audio) In motion.
+
+[02:38:15:26 - 02:38:19:15]
+ (Blank Audio) Let's see, okay, I'm stuck. Let's see, we have the same errors again.
+
+[02:38:21:40 - 02:38:23:44]
+ (Blank Audio)
+
+[02:38:25:44 - 02:38:29:40]
+ Interesting. (Blank Audio) Same errors.
+
+[02:38:32:16 - 02:38:36:01]
+ (Blank Audio)
+
+[02:38:57:01 - 02:38:59:45]
+ Once again, come on. (Blank Audio)
+
+[02:39:26:04 - 02:40:02:20]
+ (Blank Audio) (Blank Audio)
+
+[02:40:06:05 - 02:40:23:16]
+ (Blank Audio)
+
+[02:40:25:01 - 02:40:27:02]
+ Okay, let's move on.
+
+[02:40:28:10 - 02:40:32:04]
+ (Blank Audio) So what are we looking for here?
+
+[02:40:33:44 - 02:40:40:01]
+ Front end design skill, very much on skill, right? (Blank Audio) Okay.
+
+[02:40:42:12 - 02:40:44:58]
+ (Blank Audio)
+
+[02:40:46:04 - 02:40:55:14]
+ I need to make some changes to the command. (Blank Audio) Ma?
+
+[02:41:01:46 - 02:41:04:00]
+ (Blank Audio)
+
+[02:41:31:46 - 02:41:56:55]
+ (Blank Audio) (Blank Audio)
+
+[02:42:01:45 - 02:42:26:45]
+ (Blank Audio) (Blank Audio)
+
+[02:42:31:46 - 02:42:56:19]
+ (Blank Audio) (Blank Audio)
+
+[02:43:01:46 - 02:43:15:49]
+ (Blank Audio) (Blank Audio)
+
+[02:43:22:00 - 02:43:47:49]
+ (Blank Audio) (Blank Audio)
+
+[02:43:52:00 - 02:44:16:16]
+ (Blank Audio) (Blank Audio)
+
+[02:44:22:01 - 02:44:48:04]
+ (Blank Audio) (Blank Audio)
+
+[02:44:52:01 - 02:45:12:13]
+ (Blank Audio) (Blank Audio)
+
+[02:45:22:00 - 02:45:44:03]
+ (Blank Audio) (Blank Audio)
+
+[02:45:52:00 - 02:46:17:17]
+ (Blank Audio) (Blank Audio)
+
+[02:46:22:00 - 02:46:34:15]
+ (Blank Audio) (Blank Audio)
+
+[02:46:52:01 - 02:47:14:20]
+ (Blank Audio) (Blank Audio)
+
+[02:47:22:00 - 02:47:25:10]
+ (Blank Audio)
+
+[02:47:42:15 - 02:47:54:58]
+ (Blank Audio)
+
+[02:48:02:30 - 02:48:11:57]
+ (Blank Audio) (Blank Audio)
+
+[02:48:32:30 - 02:48:33:33]
+ (Blank Audio)
+
+[02:49:02:30 - 02:49:07:55]
+ (Blank Audio) (Blank Audio)
+
+[02:49:52:44 - 02:50:12:56]
+ (Blank Audio)
+
+[02:51:12:57 - 02:51:20:19]
+ (Blank Audio)
+
+[02:51:33:13 - 02:52:01:14]
+ (Blank Audio) (Blank Audio) (Blank Audio)
+
+[02:52:23:26 - 02:52:31:32]
+ (Blank Audio) (Blank Audio)
+
+[02:54:23:27 - 02:54:26:50]
+ (Blank Audio)
+
+[02:54:43:42 - 02:54:46:25]
+ (Blank Audio)
+
+[02:56:03:55 - 02:56:15:20]
+ (Blank Audio)
+
+[03:00:54:09 - 03:01:10:45]
+ (Blank Audio)
+
+[03:01:14:23 - 03:01:20:43]
+ (Blank Audio)
+
+[03:01:39:47 - 03:01:45:09]
+ (Blank Audio)
+
+[03:04:32:17 - 03:04:32:19]
+ (Blank Audio)
+
+[03:08:45:07 - 03:09:25:13]
+ (Blank Audio) (Blank Audio)
+
+[03:10:25:49 - 03:10:35:30]
+ (Blank Audio)
+
+[03:17:15:50 - 03:17:27:32]
+ (Blank Audio)
+
+[03:17:30:10 - 03:17:30:23]
+ Crop.
+
+[03:21:45:50 - 03:22:09:45]
+ (Blank Audio) (Blank Audio)
+
+[03:22:15:16 - 03:22:16:05]
+ (Blank Audio) (Blank Audio)
+
+[03:23:14:05 - 03:23:22:19]
+ (Blank Audio) (Blank Audio)
+
+[03:24:14:05 - 03:24:19:23]
+ (Blank Audio)
+
+[03:25:04:20 - 03:25:11:22]
+ (Blank Audio)
+
+[03:25:28:43 - 03:25:30:42]
+ (Blank Audio)
+
+[03:25:44:49 - 03:25:46:58]
+ (Blank Audio)
+
+[03:26:11:01 - 03:26:13:31]
+ (Blank Audio)
+
+[03:26:25:16 - 03:26:27:43]
+ (Blank Audio)
+
+[03:26:45:31 - 03:26:47:02]
+ (Blank Audio)
+
+[03:27:05:46 - 03:27:08:39]
+ (Blank Audio)
+
+[03:30:26:00 - 03:30:41:00]
+ (Blank Audio)
+
+[03:31:06:25 - 03:31:08:37]
+ (Blank Audio) (Blank Audio)
+
+[03:31:26:44 - 03:31:29:56]
+ (Blank Audio)
+
+[03:31:46:57 - 03:31:54:02]
+ (Blank Audio)
+
+[03:32:07:12 - 03:32:17:43]
+ (Blank Audio)
+
+[03:32:27:26 - 03:32:30:35]
+ (Blank Audio)
+
+[03:32:47:42 - 03:32:50:01]
+ (Blank Audio)
+
+[03:33:07:56 - 03:33:14:25]
+ (Blank Audio)
+
+[03:33:28:10 - 03:33:29:47]
+ (Blank Audio)
+
+[03:33:48:25 - 03:33:51:09]
+ (Blank Audio)
+
+[03:34:08:39 - 03:34:10:14]
+ (Blank Audio)
+
+[03:34:29:03 - 03:34:40:37]
+ Okay, so let's verify what's happening here, right? Apparently the footer is done. So let's verify that the footer is actually done properly. So let that run. Let's click the chocolate that looks like.
+
+[03:34:41:49 - 03:34:43:05]
+ So let's click this thing.
+
+[03:34:44:59 - 03:35:02:40]
+ Open up. (Blank Audio) I've basically been recording this video for the past multiple days at this point. Okay, so let's scroll down gradually.
+
+[03:35:04:26 - 03:35:08:49]
+ Yes, 100% free. I have animation here.
+
+[03:35:10:04 - 03:35:11:22]
+ We have these ones.
+
+[03:35:12:35 - 03:35:23:42]
+ We have these ones, okay? And our beautiful footer, okay? Then our footer, let's actually go. Let's go, let's go, let's go. So now let's move to the next task.
+
+[03:35:25:07 - 03:35:26:39]
+ Let's see, what's the next task?
+
+[03:35:28:27 - 03:35:35:57]
+ Okay, we're going to do load code, right? And execute.
+
+[03:35:37:21 - 03:35:43:34]
+ So that was task nine. Let's see if there's any task 10. Okay, let's see, what is used here?
+
+[03:35:45:25 - 03:35:50:27]
+ Review code, okay. So I'm going to use review code here.
+
+[03:35:51:28 - 03:35:53:26]
+ And we should hit run. Let's go.
+
+[03:35:54:50 - 03:35:56:26]
+ (Blank Audio) I'm going to stage this one.
+
+[03:35:58:04 - 03:36:05:20]
+ Here, upos 4.6, you know what? This is just a joke, man. But I don't really know what upos is.
+
+[03:36:08:20 - 03:36:13:12]
+ (Blank Audio)
+
+[03:36:17:36 - 03:36:44:50]
+ So basically, we see what's happening here, right? I have this skill, this skill is called code. Hey Jasper, go to that room, please. I'm recording something. (Blank Audio) So you see, I have this skill here. This skill here is called code review. Can you see? It's for reviewing code. It teaches the AI how to review code, right? So it's going to run through and try and set up the skills. It's going to install all the tests in it, set up the skill. For this particular skill, I'll probably need an API key, right? Two API keys.
+
+[03:36:47:07 - 03:36:53:28]
+ So I'll just go ahead and put those API keys right now into the .env. We don't have a .env yet.
+
+[03:36:54:50 - 03:37:31:13]
+ But the API keys that are needed are going to be my Gemini API key and Grog API key, because those are going to be used to run some form of checking and whatnot. But let's see how far the AI goes through with this plan. Let's see if we can hack into that. Is there anywhere where it's writing this thinking process? It doesn't written it anywhere yet, so let's just continue monitoring it and see what it's doing. I was just checking for type errors anywhere else. Let's minimize this. We still have task 11, I think. We still have task 11, right?
+
+[03:37:33:02 - 03:37:41:46]
+ You have 11 and 12. Okay, 10, 11, 12. So we'll do SEO and what's the code?
+
+[03:37:43:56 - 03:38:09:17]
+ And so far, I've actually looked at everything that has happened. We've done five Genesys, right? And we've actually, and so far, if you look at everything that has happened, we've done five Genesys, they have created the product requirement document, the standards, the structure, everything that we created. Then we also invoked the design engine with 50 plus created styles and everything, looking at the bad pro marks.
+
+[03:38:10:39 - 03:38:42:31]
+ Then we also started doing the whole algorithmic art that's for the whole SVG, zero stock graphics and generated UI. That's when we did the animation using remotion and whatnot. Then here we're running an audit to check for if there's any vulnerabilities or anything like that. So that's presenting what was running at this point because the difference between a demo product and a production app is the rigorous automated quality gets, the other sounds. So we need to make sure that everything is actually up to absolute quality at every single point.
+
+[03:38:44:41 - 03:38:49:56]
+ (Blank Audio)
+
+[03:38:51:53 - 03:39:06:30]
+ Okay, and as you can see, it's adding some changes, some fixes here. So was it actually fixing, fixing build errors? So apparently there were some build errors that were causing some issues. Interesting, I had no idea there were some, okay.
+
+[03:39:08:15 - 03:39:10:09]
+ Remove the unused Y3 transform.
+
+[03:39:11:43 - 03:39:13:52]
+ Hmm, that actually crazy.
+
+[03:39:15:07 - 03:40:20:01]
+ Remove unused tag text, remove dead code ternary. And the best part about this is that you need to, the area you do this in your code, that's like, I actually do mine at any time I'm ready to finally push to production, right? I'll just run this whole script and then it goes through and it does everything it needs to do, right? So you can look at changes that it's making here. It's removing this Y3 because we are not using that. Huh, interesting. It's also removing this complex code I did here. Swapping it also, clipboard API may not be available in all contexts. Okay, fair enough. Then here, what did you do here? Is skipping the, okay, interesting. What else did you do here? Token push attributes. Instead of this complex stuff here, it has simplified it for a much more better multiple. So, yes, it's building still failing. So it's trying to rectify all that life and direct.
+
+[03:40:21:01 - 03:40:31:20]
+ So it has deleted some other things that need to be deleted here. Okay, okay, that was the last part I needed to delete it. Let's see how that goes. It should probably be successfully now.
+
+[03:40:33:02 - 03:40:36:28]
+ Let me just pull that up here so you can see all the errors as it's going through them.
+
+[03:40:37:53 - 03:40:39:31]
+ So let's see if we build successfully.
+
+[03:40:41:08 - 03:40:44:23]
+ Fingers crossed, it should be able to build successfully now.
+
+[03:40:49:26 - 03:40:51:51]
+ Okay, compiled successfully,
+
+[03:40:52:58 - 03:40:58:53]
+ linking checks, these were, we had errors last time. So let's see if I will get to have errors this time.
+
+[03:41:00:14 - 03:41:08:55]
+ Nope, let's go. Ooh, very static data. We have five PMPM notes, blah, blah, blah, blah, blah, obtaining license to use Remotion.
+
+[03:41:11:16 - 03:41:11:38]
+ Interesting.
+
+[03:41:15:14 - 03:41:32:21]
+ Actually, nobody needed the license to use Remotion. Let me check what that is about. Interesting, this is why you have to monitor these stuffs. But let me see if the AI actually thinks that it's a big build, compiled the execute one, Remotion license, note, blah, blah, blah, not an actual build error.
+
+[03:41:33:21 - 03:41:57:09]
+ Let's see. Depending on the type of your legal entity, your grantee, you can use Remotion for over there. In the world, there are small companies that allow to use Remotion to create videos for free, even commercial. One of the company assets required for profit organization of its set in sales. The two tier system was generated by a bank. So company, so free, free license.
+
+[03:41:58:30 - 03:42:14:33]
+ An individual, a for-profit organization with up to three employees, a nonprofit or a non-for-profit, OK. Allogious cases, this allowed not to copy or modify Remotion code for the purpose of selling, renting, licensing, and realising. Fair enough.
+
+[03:42:15:34 - 03:42:33:22]
+ One in notice, this software is provided as is without any warranty. OK. You are required to obtain a license in Remotion if you are not within a group or entity, as you would feel as in, this license is already with the Remotion, whatever. I don't think I found that out category.
+
+[03:42:34:26 - 03:43:01:25]
+ OK, good. So now this is one of the best parts of anti-gravity, right? So you have to check if everything is actually working well. It has taken one extra step to actually spawn up the browser, as you can see. So the AI itself, I'm not the one doing anything. The AI itself is the one scrolling. Did you just see that? The AI is the one scrolling, taking screenshots and looking at everything. Screwed 1,000 pixels, basically. And you can check the start process here.
+
+[03:43:02:31 - 03:43:22:37]
+ He said, oh, OK. I've confirmed the hero section is displayed. Now shifting focus to the employing, blah, blah, blah, blah. He is saying, I'm not focused on interface components. I've noticed the stats by Remotion, blah, blah, blah. Video like clearly my attention is now shifted to the skill grid. So it's going step by step.
+
+[03:43:23:40 - 03:43:30:49]
+ What was this? What was this that I edited? To do list. Because I'm just like, oh, there was a scratch part. OK.
+
+[03:43:31:51 - 03:43:42:15]
+ Some real findings. The Bible has successfully, blah, blah, blah, blah, blah, blah, blah. That's ticked all the things successfully, that they all worked well and it's satisfied with everything.
+
+[03:43:43:33 - 03:43:43:45]
+ Yup.
+
+[03:43:45:27 - 03:44:03:14]
+ And we too, we are satisfied, aren't we? We're mostly satisfied. I'll just have to go further now and just add some one or two here and there, just to make sure that all these things actually work. Maybe it's actually linked to my GitHub or whatever it is. And I'll drop the link in the description. So whatever the link is at the end of this video to be on screen.
+
+[03:44:04:20 - 03:44:04:32]
+ Yup.
+
+[03:44:08:10 - 03:44:20:44]
+ And now we still have some few more checks to run. So we made some changes to this. We're missing noise SVG. OK. There's an SVG. I think it removed it, right? Did you remove it?
+
+[03:44:21:50 - 03:44:26:03]
+ OK. There's an SVG that is meant to be added. Noise SVG.
+
+[03:44:28:33 - 03:44:35:37]
+ For which section? Stats bar. So you actually noticed that something was missing. Stats bar. Where is stats bar?
+
+[03:44:37:07 - 03:44:38:00]
+ Statos bar.
+
+[03:44:39:45 - 03:44:43:07]
+ OK. Right. This should be the stats bar, right? This medium.
+
+[03:44:44:26 - 03:44:52:43]
+ What about this second one, Danny? (Audio Playback) Let's see how that goes.
+
+[03:44:55:16 - 03:44:58:17]
+ So we're already in a beauty again to make sure that everything I carry on is successful.
+
+[03:44:59:40 - 03:45:04:28]
+ (Audio Playback)
+
+[03:45:05:49 - 03:45:14:33]
+ OK. So let's move to the next task. The next task now is going to be-- we're going to do task 11, right?
+
+[03:45:16:14 - 03:45:19:16]
+ And let's just run that.
+
+[03:45:21:10 - 03:45:24:58]
+ Note we use PNPM in this project.
+
+[03:45:26:01 - 03:45:32:40]
+ OK. So now this SEO. So let's look at what that SEO one is about, right? Oh, no. I made a mistake.
+
+[03:45:37:04 - 03:45:37:11]
+ (Audio Playback)
+
+[03:45:42:33 - 03:45:45:26]
+ (Beep)
+
+[03:45:50:25 - 03:45:53:27]
+ OK. So now we're moving to SEO. Let's see what the SEO is about.
+
+[03:45:54:33 - 03:46:01:15]
+ We're going to use the Next-Year Standards on SEO-ready skills. So let's just see how the AI handles those two.
+
+[03:46:31:16 - 03:46:46:47]
+ (Audio Playback)
+
+[03:46:47:53 - 03:46:52:32]
+ OK. So I'm looking at the project requirement document today. I understand what the project is actually about.
+
+[03:46:54:10 - 03:46:54:22]
+ OK.
+
+[03:46:56:45 - 03:46:58:26]
+ (Audio Playback) (Inaudible) Here. Changes to P.
+
+[03:46:59:56 - 03:47:02:30]
+ I was going to use NPM in this project. Never.
+
+[03:47:03:47 - 03:47:07:27]
+ (Audio Playback) NPM. Anyways, the NPM. Change to PNPM. Shops.
+
+[03:47:10:07 - 03:47:10:57]
+ (Audio Playback) P. NPM.
+
+[03:47:12:25 - 03:47:12:55]
+ (Audio Playback) Yes.
+
+[03:47:15:00 - 03:47:18:58]
+ (Audio Playback) All NPMs must change to PNPM by Fire-wide Force.
+
+[03:47:21:28 - 03:47:32:46]
+ (Audio Playback) Let me see. This is the other one. This one that I changed myself. (Audio Playback) We're going to go to P there. (Audio Playback) Because we say no to P's. Refer.
+
+[03:47:36:05 - 03:47:38:58]
+ (Audio Playback)
+
+[03:47:58:19 - 03:48:05:31]
+ (Audio Playback) I press all 18.
+
+[03:48:06:52 - 03:48:08:30]
+ Yes. We kiss all of them.
+
+[03:48:11:38 - 03:48:21:31]
+ (Audio Playback) (Inaudible) Yes. (Inaudible) Where do you want to buy it from? (Inaudible)
+
+[03:48:23:11 - 03:48:34:23]
+ Why do you want to buy it? It's-- (Inaudible) Because-- (Inaudible) (Inaudible) I don't know how much. You're going to check online. You can't buy that shit, yeah. Nobody's selling it.
+
+[03:48:35:33 - 03:48:36:10]
+ Yes, no.
+
+[03:48:37:22 - 03:48:40:25]
+ Like S21, Op. (Inaudible)
+
+[03:48:42:28 - 03:48:45:02]
+ I don't know. You're going to check online, too. No, I don't know who's selling it.
+
+[03:48:47:32 - 03:48:50:00]
+ (Audio Playback) (Inaudible)
+
+[03:48:51:44 - 03:48:52:50]
+ Yeah, I tried to know where it is.
+
+[03:48:55:05 - 03:49:04:43]
+ Guy, I'm recording a video. Guy, ah. (Inaudible) (Inaudible) Yeah.
+
+[03:49:06:02 - 03:49:08:30]
+ Yeah. I'm telling me, Loon. Oh.
+
+[03:49:09:33 - 03:49:19:23]
+ I've heard. So the thing about this part now is that it does edited the layouts file, right? It added some other things here, some SEO keywords.
+
+[03:49:20:40 - 03:49:20:52]
+ OK.
+
+[03:49:22:08 - 03:49:24:45]
+ Making sense, making sense. Then robots.ts.
+
+[03:49:25:50 - 03:49:45:00]
+ OK. And then a sitemap. One thing I'm noticing with this sitemap is that URL it's giving us is vibeforge.dev, right? So not too bad. Not bad. Not bad. But let's check if there's anything like vibeforge that already exists. Let me see.
+
+[03:49:46:00 - 03:49:46:58]
+ Vibeforge.
+
+[03:49:48:14 - 03:49:48:46]
+ Let me see.
+
+[03:49:50:26 - 03:49:50:44]
+ Lol.
+
+[03:49:53:52 - 03:49:55:17]
+ Everybody already has vibeforge.
+
+[03:49:56:38 - 03:49:59:51]
+ So let's come up with a smart name.
+
+[03:50:00:55 - 03:50:04:53]
+ I'm going to show you guys something that all those doing time out. It's going to be smart names.
+
+[03:50:05:53 - 03:50:14:14]
+ So I'm going to carry the project to Carmen Dopman because it basically carries the full brain of the project, right? And I'm just going to open Gemini.
+
+[03:50:16:34 - 03:50:28:13]
+ And so I need a name for this website or project.
+
+[03:50:29:30 - 03:50:36:33]
+ Let's try looking for names in other languages,
+
+[03:50:38:55 - 03:50:51:25]
+ like Chinese, like Chinese, Japanese. I think, funny enough, I think I created a skill.
+
+[03:50:52:53 - 03:51:01:51]
+ Domain Name Brainstorming. Boom. I know I did it. You see? I'm really that guy for you guys. I'm really that guy for you guys.
+
+[03:51:03:33 - 03:51:27:55]
+ You know what? Let's do this. Let's run Domain Name Brainstorming, right? It's a skill. Let's run it. Domain Name Brainstorming. So apparently, apparently, Vibe Forge is taking. I need something creative. Boom. I know I'm there for you guys. I am there for you guys.
+
+[03:51:29:09 - 03:51:32:22]
+ I am there for you guys. You made this stuff. Was you know me?
+
+[03:51:34:32 - 03:51:40:43]
+ Wait, let me see. Does it? Does it? I'm thinking of you two. Blah, blah, blah, blah, blah. I think it was me.
+
+[03:51:42:35 - 03:51:45:20]
+ Was it me? Who made this thing?
+
+[03:51:52:50 - 03:51:54:16]
+ I think I'm the one that made it.
+
+[03:51:55:21 - 03:51:57:28]
+ I am the one that made it. It has to be me.
+
+[03:51:59:16 - 03:51:59:28]
+ Skills.
+
+[03:52:01:35 - 03:52:04:17]
+ I think I made it.
+
+[03:52:06:35 - 03:52:10:46]
+ Skills as a message. I feel like I am the one. I have to be Domain.
+
+[03:52:16:08 - 03:52:17:01]
+ Oh, she was in me.
+
+[03:52:18:57 - 03:52:19:27]
+ Oh, shit.
+
+[03:52:21:11 - 03:52:21:23]
+ Oops.
+
+[03:52:22:53 - 03:52:23:43]
+ It was in me.
+
+[03:52:27:02 - 03:52:33:14]
+ Nah, it was in me. But let's see how this one goes. Let me not close my own. Let me still try mine.
+
+[03:52:34:34 - 03:52:40:30]
+ Japanese or any language blue belly.
+
+[03:52:48:19 - 03:52:51:02]
+ Let's try it. Let's see what happens. Let's see.
+
+[03:52:55:10 - 03:52:56:39]
+ So they're going to check online.
+
+[03:52:58:53 - 03:53:01:56]
+ So let's see. Let's just see what happens. Let's see what happens.
+
+[03:53:34:33 - 03:53:48:05]
+ (Inaudible) Bibesuits.dev.
+
+[03:53:49:57 - 03:53:51:38]
+ Actually, I don't have any of these domains.
+
+[03:53:54:50 - 03:53:57:52]
+ Funny enough, I actually don't have--
+
+[03:53:59:38 - 03:54:03:41]
+ these are the ones that are taking bibesuits.com.
+
+[03:54:05:28 - 03:54:11:58]
+ I can't be buying you these domains. I'm really not going to buy it. I'm really going to buy it.
+
+[03:54:13:42 - 03:54:16:39]
+ Kurugan, meaning black steel, black iron.
+
+[03:54:18:01 - 03:54:20:57]
+ Ew, that's so stupid. Rensa.
+
+[03:54:22:51 - 03:54:23:51]
+ Hm, sequins.
+
+[03:54:25:08 - 03:54:26:41]
+ Takumi. I like this one.
+
+[03:54:28:55 - 03:54:29:27]
+ Takumi.
+
+[03:54:31:17 - 03:54:31:28]
+ Zai.
+
+[03:54:33:26 - 03:54:40:57]
+ (Non-english Speech) OK.
+
+[03:54:42:03 - 03:54:47:09]
+ Here we are. I'm going to use this takumi.
+
+[03:54:51:16 - 03:54:55:33]
+ And this takumi. (Non-english Speech)
+
+[03:54:57:31 - 03:55:02:58]
+ Yup, takumi. Takumi is what I'm going to use. I like takumi. Takumi sounds dope. (Inaudible)
+
+[03:55:04:07 - 03:55:05:43]
+ There's no point of running this kid, honestly.
+
+[03:55:07:15 - 03:55:08:49]
+ But it's cool. It's dope. It's tried out. It's cool.
+
+[03:55:09:56 - 03:55:12:58]
+ But there's no point wasting our time on this. No, very interesting takumi.
+
+[03:55:14:10 - 03:55:14:15]
+ (Non-english Speech)
+
+[03:55:16:02 - 03:55:18:21]
+ And actually, the website is going to end up being--
+
+[03:55:19:21 - 03:55:21:10]
+ it's going to end up being takumi.
+
+[03:55:23:26 - 03:55:35:58]
+ It's going to-- for now, at least, for now, it's going to be takumi.-- let me see. JST-- it's going to be takumi.jstastudios.com. Yeah, that's going to be the website.
+
+[03:55:37:41 - 03:55:37:50]
+ (Inaudible)
+
+[03:55:39:43 - 03:55:45:07]
+ Yup, that's going to be the website. So let me just tell you that here.
+
+[03:55:49:38 - 03:55:58:33]
+ (Inaudible) Yup, we're going to use takumi.jstastudios.com. Yeah, that's going to be the website.
+
+[03:56:00:09 - 03:56:00:15]
+ (Inaudible)
+
+[03:56:01:58 - 03:56:02:13]
+ Beautiful.
+
+[03:56:03:19 - 03:56:06:16]
+ That's so useless to search. I'm not going to lie.
+
+[03:56:08:18 - 03:56:09:40]
+ That's clubbed for SEO.
+
+[03:56:11:35 - 03:56:14:35]
+ I'm not going to copy you to-- that's actually clubbed for SEO.
+
+[03:56:15:47 - 03:56:20:25]
+ Because how are you going to rank and search for that?
+
+[03:56:22:23 - 03:56:24:41]
+ Oh, well. That's the magic of SEO.
+
+[03:56:27:07 - 03:56:30:53]
+ Oh, I'm trying to get crazy. How are you going to-- vibe coding protocol suit.
+
+[03:56:32:10 - 03:56:32:22]
+ Hmm.
+
+[03:56:38:27 - 03:56:47:04]
+ That's OG image. Can it be J star--
+
+[03:56:51:42 - 03:57:12:57]
+ films, studios, vibe code protocol or something like that?
+
+[03:57:14:02 - 03:58:00:10]
+ Then we can add takumi inside. Do that, and then do that, and then give me a prompt to give my hair to make an image. So I will pick between the date and the years. Don't use the image generation just to make it. And generation two things. Because I don't want it to end up-- because anti-gravity has an internal image generation two. I don't want to end up using that. I want to straight up use-- oh my god, the anti-gravity just bleached.
+
+[03:58:01:50 - 03:58:09:00]
+ I want to use Gemini in the web genestown. So you're joking.
+
+[03:58:10:36 - 03:58:18:19]
+ So you're just running command to write this thing. Post my head. It's not so simitinking or something complex.
+
+[03:58:23:05 - 03:58:25:16]
+ Simitinking is some complex jiu-jitsu.
+
+[03:58:30:00 - 03:58:31:35]
+ OK, let's see. A premium.
+
+[03:58:35:08 - 03:58:40:07]
+ So let's try that now. Let's actually just come back here, right?
+
+[03:58:41:37 - 03:58:42:55]
+ Create a new chart.
+
+[03:58:44:02 - 03:58:46:44]
+ Well, finally, they made it clickable. Take the code.
+
+[03:58:47:57 - 03:58:49:26]
+ Let's drop the prompt here.
+
+[03:58:51:07 - 03:58:53:01]
+ Let's generate images.
+
+[03:58:54:10 - 03:58:57:53]
+ And let's press Pro. And then, again, come here.
+
+[03:58:59:16 - 03:59:06:16]
+ Let me show you guys how to make a skill. So in the protocol thing, there's something called a skill creation skill, basically.
+
+[03:59:07:25 - 03:59:18:42]
+ And I can copy this skill like this. And then give it to the AI here, for example. So I already told you that I liked Takumi. Blah, blah, blah, blah.
+
+[03:59:19:47 - 03:59:34:47]
+ OK, so please, can you make a skill following this skill? So usually, when you're working on your project and-- yes.
+
+[03:59:36:53 - 03:59:55:58]
+ When you're working on your project and you are now satisfied with the output of the project, then that's when you now-- let's say you do a particular procedure. Maybe you're debugging a particular type of bug that normally comes up. Then you now run this skill creation skill to create the skill that you get.
+
+[03:59:57:45 - 04:00:15:34]
+ So let's just continue from where we are. See, I'm doing this thing live for you guys, so that you guys can see that this is not just all those one-off tutorials that everything is so perfect. Then I'm going to create my domain name actually. Zoho.
+
+[04:00:18:52 - 04:00:21:04]
+ I shall open Zoho.
+
+[04:00:23:15 - 04:00:24:04]
+ Console.
+
+[04:00:25:55 - 04:00:30:15]
+ Console. Go Zoho. Zoho, no, something, something.
+
+[04:00:31:46 - 04:00:41:02]
+ Log in, baby. I should send me a new TPO or shit. Do I need to-- oh my god. This actually logs in fast.
+
+[04:00:42:07 - 04:00:43:17]
+ Remind me in two weeks.
+
+[04:00:46:45 - 04:00:50:03]
+ It just logs in fast. I know that my internet has always been my downfall.
+
+[04:00:54:17 - 04:00:56:30]
+ So we're done with this one.
+
+[04:00:58:16 - 04:01:00:53]
+ Now let's move on to the next task.
+
+[04:01:07:06 - 04:01:11:23]
+ That is going to be task 12.
+
+[04:01:13:07 - 04:01:17:58]
+ So we're going to move to task 12.
+
+[04:01:19:21 - 04:01:22:05]
+ Woo, I'm almost done, boys.
+
+[04:01:25:20 - 04:01:34:32]
+ OK, vibe panelize, copywriting, conduct a final copy polish pass across all the different parts of the class. Copywriting, conduct a final copy polish pass across all sections of the landing page.
+
+[04:01:35:35 - 04:01:39:25]
+ So let's run the five prime agents.
+
+[04:01:40:34 - 04:01:56:38]
+ I'm going to run prime agents, vibe finalize, finalize, and prime agents. OK, so let's see how that goes.
+
+[04:01:58:04 - 04:02:25:25]
+ (Side Conversation)
+
+[04:02:30:37 - 04:02:52:26]
+ OK, so while all these are running and everything is trying to verify that everything is fine, I was just like, you know, whenever you try and actually push this website up, and I'll teach you guys how to do that just because I'm a good person, I just need help to kind of technically demonetize it. So I went to the GitHub repository. You notice I've been pushing some stuff over because of every single step I do. And I'm just pushing, pushing, pushing to GitHub. You don't have to use GitHub.
+
+[04:02:54:07 - 04:04:06:14]
+ Just ask Germany our charge ability to work with you. It's not that hard, honestly. Well, long story-- or just tell the agent to do it for you. But you just create a GitHub around. Anyway, you have the GitHub here, and it's fine. And all you're just going to do, you're just going to go to Verso, right? Verso.com. And you're going to create an account. You're going to come here, create a new project. You're just going to call it Project. And you're going to link it to your GitHub, right? You're going to use GitHub. So because it's linked to my GitHub, I can see that that project is here, Vibe Forge, nine hours ago. And so I can import it, right? And then it knows what framework we use. We use Next.js. And all I just have to hit, literally, is deploy. Because for this project, we didn't do anything crazy. We didn't do anything complex. We didn't do anything out of the ordinary. We just did stuff, right? So we're just going to hit Deploy. And it should just deploy. And in a few seconds, once it's done deploying, we're able to access the website from a URL. And then after that, I'll be able to do it. The other thing I want to do is much more complex. And outside of the scope of this tutorial, ha ha. Anyway, but let's just come back here and see what's actually going on here. So the agent has actually run and did the whole copy polish. Let's see what he actually did. Because I don't really understand what the copy polish is. But let's see.
+
+[04:04:07:19 - 04:04:13:46]
+ Oh, I see. It didn't take on the write up on the project. Oh my god.
+
+[04:04:14:51 - 04:04:28:07]
+ Reclaim-- so instead of owning your development environment with the Vibe Suite, it's like, reclaim your development environment with Vibe Suite. It created architecture. Ooh, instead of collection, it's architecture. Oh my god.
+
+[04:04:29:10 - 04:04:34:35]
+ Absolute. No subscription, just a variety. It said, no subscription. Absolute. Oh my god.
+
+[04:04:35:43 - 04:04:38:21]
+ Deploy now instead of get started. Hm.
+
+[04:04:40:00 - 04:04:44:22]
+ Clock it. Clock it. Start building. Launch pipeline. Deploy infrastructure.
+
+[04:04:45:30 - 04:04:54:43]
+ Oh my. What is this little thing that's just making this thing sound so-- these two things are just making this thing sound so intriguing. You know what I'm saying? It's just making it sound like some normal BS.
+
+[04:04:56:05 - 04:05:23:49]
+ And you see, like, these are the things that just make your stuff stand out. See this one. End to end scaffolding, continuous deployment, and code base evaluation driven by structure. Bruh. You change the scaffold, deploy, and evolve your code base fully automated by-- that is clean. This is clean. This is clean. This is actually clean. CLI commands, command install.
+
+[04:05:24:53 - 04:05:27:25]
+ Open source, free forever. Hm.
+
+[04:05:29:29 - 04:05:33:26]
+ Free forever. What does that mean? Open source. Just says open source.
+
+[04:05:34:27 - 04:05:35:11]
+ Open source.
+
+[04:05:36:35 - 04:07:04:58]
+ Bars. So I think-- and then once that was done, the project is literally complete, right? Literally complete. We've already done everything. We've done this one. I don't know why it's still there. Let's just move it to complete it. Move. Yup. Everything is done. So we've gone through every single of these steps all the way down to task 12 right now. And it's doing the build-out handoff reports, giving a breakdown of all the things that we've done from future requirements one down to future requirements 10. And I'm able to successfully show you how skills can actually empower you. Just imagine if you had to do this by yourself. That would have been really crazy. But mind you, even from the whole thought process of what the project was, I didn't even do it myself. You watched me just let the agent build this from scratch. The only place I actually intervened was maybe in some areas where I had to do a bit of troubleshooting. And when it came to the name that we had to choose. So if you actually come back to this presentation that I cooked up for you guys, we've done the marketing SEO. So a beautiful site is just less if Google can't find it or if the copy doesn't convert. So that's why we use the copywriting skill to get a copy that makes a lot of sense. So this is a SaaS product for managing your task efficiently. Change to stop wasting tokens. Build a 50 plus skill AI operating system in second. Absolutely beautiful.
+
+[04:07:06:15 - 04:07:18:38]
+ And I already showed you guys how to use the skill creator at that time. Let's actually take a look at what that looks like. Because I got carried away with a bunch of stuff. And we left that. We have some errors. A, well, we have some good errors. Gang gang.
+
+[04:07:21:29 - 04:07:37:53]
+ But we don't have any good errors here. So I can actually push this now to get home and we should be good to go. But that aside, let's just look at the skill that we actually told Gemini to make the last time. OK, here's the complete standard structure directory. So this is the skill that we made.
+
+[04:07:38:57 - 04:07:39:16]
+ No.
+
+[04:07:42:47 - 04:07:45:49]
+ No. (Sigh) (Inaudible)
+
+[04:07:48:32 - 04:07:51:39]
+ Oh, shit. OK, please can you make a skill?
+
+[04:07:53:04 - 04:07:53:22]
+ Huh.
+
+[04:07:56:02 - 04:08:07:09]
+ So skill following this skill. This skill is basically a way of getting names for your products.
+
+[04:08:08:19 - 04:08:28:31]
+ Since all the names on Earth are taken, at least in English language, so we can try different denominations and whatnot.
+
+[04:08:29:32 - 04:09:16:52]
+ Not just Chinese. Even Nigerian, languages, Indian, ADC, and give the user options and easy stuff for people to remember and say so that it can have a nice branding. Yep, so let's just update that. Let's get a better skill. Thank you. I checked that out. So let's just push this to give up. So we said publish, copy our personality sections, commit. This is actually crazy. I've never even used this copy skill before. Not for the guys I've used before.
+
+[04:09:18:00 - 04:09:21:13]
+ Well, this is just like the tip of the iceberg.
+
+[04:09:23:09 - 04:09:36:47]
+ And that's back to our saying, right? All these things, we'll still come back to that though. We'll still come back to that one. But yeah, that's it. So I'll show you how to create the skills. I actually did the proper breakdown, how the skills are going to be created.
+
+[04:09:38:03 - 04:10:48:25]
+ And yeah, the agent log-- and you know the crazy thing. I told you guys at the beginning of this video, this project was actually made using a skill. This whole video you're watching, right? I planned the whole thing using a skill. So that's really, really important. I had my whole workflow for making use of video. Just like, you know what? Let's donate the workflow into a skill. And here we are today. So if you enjoyed this video, just know that I really appreciate you for enjoying it. And I really hope that's going to take you to great places and make you stand out from the whole noise of what people think Vapcoding is in today's world. And also, you can also appreciate the amount of ease that AI has actually given to us as creators and people with ideas to be able to match up to professional standards. Remember, why not just Vapcoding? We're actually making things that matter with high quality. So you need to take your time for each step of the way. You need to take your time. So get ready, MPX Vibesuits in it, or MPX Vibesuits in store, whichever one it is. And get ready, 50 plus skills into one brain.
+
+[04:10:50:02 - 04:10:58:16]
+ I can't wait to see your feedback in the description. No, not in the description. I can't wait to see your feedback in the comments section. Love you guys. Remember, I call you the vibe, call you the flow.
