@@ -1,4 +1,5 @@
 packages:
+  - 'remotion'
   # All Remotion video projects
   - 'videos/*'
   
