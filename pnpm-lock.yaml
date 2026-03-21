@@ -138,6 +138,34 @@ importers:
 
   packages/tsconfig: {}
 
+  remotion:
+    dependencies:
+      '@jstar/remotion-shared':
+        specifier: workspace:*
+        version: link:../packages/remotion-shared
+      lucide-react:
+        specifier: ^0.563.0
+        version: 0.563.0(react@18.3.1)
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.3.1
+        version: 18.3.1(react@18.3.1)
+      remotion:
+        specifier: ^4.0.0
+        version: 4.0.419(react-dom@18.3.1)(react@18.3.1)
+    devDependencies:
+      '@remotion/cli':
+        specifier: ^4.0.0
+        version: 4.0.419(react-dom@18.3.1)(react@18.3.1)
+      '@types/react':
+        specifier: ^18.3.12
+        version: 18.3.28
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
+
   tools/transcriber:
     dependencies:
       cli-progress:
@@ -939,7 +967,7 @@ packages:
       remotion: 4.0.419(react-dom@18.3.1)(react@18.3.1)
       source-map: 0.7.3
       style-loader: 4.0.0(webpack@5.96.1)
-      webpack: 5.96.1(esbuild@0.25.0)
+      webpack: 5.96.1
     transitivePeerDependencies:
       - '@swc/core'
       - bufferutil
@@ -1983,7 +2011,7 @@ packages:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.7.4
-      webpack: 5.96.1(esbuild@0.25.0)
+      webpack: 5.96.1
 
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
@@ -4164,7 +4192,7 @@ packages:
     peerDependencies:
       webpack: ^5.27.0
     dependencies:
-      webpack: 5.96.1(esbuild@0.25.0)
+      webpack: 5.96.1
 
   /supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
@@ -4221,7 +4249,7 @@ packages:
       schema-utils: 4.3.3
       serialize-javascript: 6.0.2
       terser: 5.46.0
-      webpack: 5.96.1(esbuild@0.25.0)
+      webpack: 5.96.1
 
   /terser@5.46.0:
     resolution: {integrity: sha512-jTwoImyr/QbOWFFso3YoU3ik0jBBDJ6JTOQiy/J2YxVJdZCc+5u7skhNwiOR3FQIygFqVUPHl7qbbxtjW2K3Qg==}
@@ -4543,7 +4571,7 @@ packages:
     resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
 
-  /webpack@5.96.1(esbuild@0.25.0):
+  /webpack@5.96.1:
     resolution: {integrity: sha512-l2LlBSvVZGhL4ZrPwyr8+37AunkcYj5qh8o6u2/2rzoPc8gxFJkLj1WxNgooi9pnoc06jh0BjuXnamM4qlujZA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
