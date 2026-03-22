@@ -1,4 +1,4 @@
-# J-Star YouTube Monorepo
+# J-Star YouTube Monorepo skr
 
 Production-ready monorepo for YouTube video projects using Remotion, pnpm workspaces, Turborepo caching, and CreativeOS structure.
 
